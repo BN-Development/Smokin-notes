@@ -1,0 +1,129 @@
+.login-container {
+  max-width: 1360px;
+}
+
+.login h1 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.login-image {
+  margin: 0 -25px;
+}
+
+.login-image img {
+  width: 100%;
+}
+
+.login-form {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.login .input-wrap + .input-wrap {
+  margin-top: 25px;
+}
+
+.login .form-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 18px;
+}
+
+.login .form-group a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #72808f;
+}
+
+.login .form-group a:hover {
+  color: #D93025;
+}
+
+.login .btn-primary {
+  width: 100%;
+  margin: 30px auto 0;
+  max-width: 420px;
+  display: block;
+}
+
+.login a.button {
+  line-height: 44px;
+  display: block;
+  margin: 10px auto 0;
+  text-align: center;
+  max-width: 420px;
+}
+
+.login a.button span {
+  font-size: 20px;
+  position: relative;
+  bottom: -2px;
+}
+
+@media all and (min-width: 768px) {
+  .login-form-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .login-form {
+    width: 330px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .login {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .login-container {
+    padding: 0;
+  }
+  .login h1 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .login > div {
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .login-form-wrap {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .login-form {
+    padding: 0;
+  }
+  .login-image {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .login-image img {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+}

@@ -1,0 +1,686 @@
+.container {
+  max-width: 1210px;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.hero {
+  padding-top: 24px;
+}
+
+.hero h1 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.hero p {
+  margin-bottom: 7px;
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hero .btns-block {
+  margin-bottom: 25px;
+}
+
+.hero .btns-block a + a {
+  margin-left: 20px;
+}
+
+.hero-images {
+  margin: 0 -25px;
+  width: auto;
+}
+
+.hero-images__desk {
+  display: none;
+}
+
+.hero-images__mob {
+  width: 100%;
+}
+
+.provide {
+  margin: 55px auto 80px;
+}
+
+.provide h2 {
+  margin-bottom: 40px;
+}
+
+.provide-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-gap: 35px;
+}
+
+.provide-list img {
+  margin-bottom: 10px;
+}
+
+.provide-list__item p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.courses {
+  margin-bottom: 80px;
+}
+
+.courses h2 {
+  margin-bottom: 40px;
+}
+
+.courses .flickity-viewport,
+.courses .flickity-slider {
+  min-height: 100%;
+}
+
+.courses-list {
+  min-height: 100%;
+}
+
+.courses-list__item {
+  margin-right: 60px;
+}
+
+.courses-list__item a {
+  display: block;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.courses-list__item a:hover {
+  text-decoration: underline;
+}
+
+.courses-list__item a + a {
+  margin-top: 12px;
+}
+
+.advantages {
+  padding-bottom: 80px;
+}
+
+.advantages h2 {
+  margin-bottom: 20px;
+}
+
+.advantages-list__item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.advantages-list__item img {
+  margin-right: 10px;
+  width: 29px;
+}
+
+.advantages-list__item + .advantages-list__item {
+  margin-top: 13px;
+}
+
+.advantages__image {
+  margin: 0 -25px 50px;
+  width: auto;
+  height: 365px;
+  background: url("../images/parallax-image.jpg") no-repeat;
+  background-position: 80% top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.advantages__image_overlay-first {
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -123px;
+}
+
+.advantages__image_overlay-second {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: -384px;
+}
+
+.comments {
+  position: relative;
+}
+
+.comments h2 {
+  font-size: 29px;
+  line-height: 36px;
+  max-width: 260px;
+  margin-bottom: 22px;
+}
+
+.comments-slider {
+  margin-bottom: 80px;
+}
+
+.comments-slider__item {
+  width: 100%;
+  margin-right: 40px;
+}
+
+.comments-slider__image {
+  margin: 0 auto 58px;
+  padding-top: 55px;
+  position: relative;
+  min-height: 100%;
+  max-width: 400px;
+}
+
+.comments-slider__image img {
+  width: 100%;
+  display: block;
+}
+
+.comments-slider__text-name {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.comments-slider__text-student {
+  font-size: 14px;
+  line-height: 21px;
+  color: #c1c5ca;
+}
+
+.comments-slider__text-comment {
+  margin-top: 13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.comments-slider .flickity-button {
+  top: 13px;
+  background: none;
+  width: 20px;
+}
+
+.comments-slider .flickity-prev-next-button.next {
+  left: 50px;
+}
+
+.comments-slider .flickity-prev-next-button.previous {
+  left: 0;
+}
+
+.comments-slider__image_layer-over {
+  width: 143px;
+  padding: 15px 10px;
+  background-color: #fff;
+  position: absolute;
+  box-shadow: 3px 7px 27px rgba(168, 178, 189, 0.11);
+  border-radius: 5px;
+}
+
+.comments-slider__image_layer-over h6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.comments-slider__image_layer-over p {
+  margin-top: 13px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.comments-slider__image_layer-over_first {
+  right: 0;
+  top: 0;
+}
+
+.comments-slider__image_layer-over_second {
+  left: -9px;
+  bottom: 15px;
+}
+
+.comments-slider__image_layer-over_third {
+  right: 0;
+  bottom: -38px;
+}
+
+.comments-slider__image_layer-over_primary {
+  background-color: #D93025;
+}
+
+.comments-slider__image_layer-over_primary h6,
+.comments-slider__image_layer-over_primary p {
+  color: #fff;
+}
+
+.apply-scholarship {
+  padding-bottom: 70px;
+}
+
+.apply-scholarship h2 {
+  font-size: 20px;
+  line-height: 25px;
+  margin: 53px 0 15px;
+}
+
+.apply-scholarship p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.apply-scholarship__image {
+  margin: 0 -25px;
+  width: auto;
+}
+
+.apply-scholarship__image img {
+  width: 100%;
+}
+
+.contact-us-wrap {
+  border-top: 1px solid #e3e3e4;
+  padding: 55px 0 60px;
+}
+
+.contact-us h2 {
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+
+.contact-us .subtitle {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contact-us form {
+  margin-top: 30px;
+}
+
+.contact-us .input-wrap + .input-wrap {
+  margin-top: 30px;
+}
+
+.contact-us .form-group {
+  margin-bottom: 35px;
+}
+
+.contact-us button {
+  margin-top: 20px;
+}
+
+@media all and (min-width: 768px) {
+  .hero {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 350px;
+    margin-bottom: 50px;
+  }
+  .hero p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .hero-images {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+  }
+  .hero-images__desk {
+    display: block;
+    width: 400px;
+  }
+  .hero-images__mob {
+    display: none;
+  }
+  .hero .log-in {
+    display: none;
+  }
+  .provide {
+    margin-bottom: 100px;
+  }
+  .provide h2 {
+    margin-bottom: 70px;
+  }
+  .provide-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .provide-list__item {
+    text-align: center;
+  }
+  .provide-list__item img {
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .courses {
+    margin-bottom: 150px;
+  }
+  .courses h2 {
+    text-align: left;
+    margin-bottom: 50px;
+    max-width: 615px;
+  }
+  .courses-list__item a {
+    font-size: 24px;
+  }
+  .advantages {
+    padding-bottom: 100px;
+  }
+  .advantages h2 {
+    max-width: 553px;
+    margin: 0 auto 50px;
+  }
+  .advantages__image {
+    margin-bottom: 50px;
+    background: url("../images/parallax-image.jpg") no-repeat;
+    background-attachment: fixed;
+  }
+  .advantages__image_overlay-first {
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: 0;
+  }
+  .advantages__image_overlay-second {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+  .advantages__button {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .apply-scholarship {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 70px;
+  }
+  .apply-scholarship__image {
+    margin: 0;
+    max-width: 590px;
+  }
+  .apply-scholarship__descr {
+    max-width: 390px;
+    margin-left: 40px;
+  }
+  .apply-scholarship h2 {
+    text-align: left;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 0;
+  }
+  .contact-us {
+    background: #f7f8f9;
+  }
+  .contact-us h2 {
+    text-align: left;
+    font-size: 38px;
+  }
+  .contact-us form {
+    margin: 0;
+    width: 100%;
+    max-width: 625px;
+  }
+  .contact-us-wrap {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    border: none;
+  }
+  .comments {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  .comments .container {
+    position: relative;
+  }
+  .comments h2 {
+    text-align: left;
+    position: absolute;
+    top: 17%;
+    left: 50px;
+    z-index: 1;
+  }
+  .comments-slider__item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: relative;
+    padding: 55px 0;
+  }
+  .comments-slider__image {
+    margin-bottom: 0;
+    padding: 0;
+    -webkit-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .comments-slider__image img {
+    max-height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .comments-slider__text {
+    padding-top: 20%;
+    padding-right: 40px;
+    padding-left: 25px;
+    -webkit-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    background: #f7f8f9;
+  }
+  .comments-slider__text-comment {
+    max-width: 350px;
+  }
+  .comments-slider .flickity-button {
+    top: 10%;
+    margin-top: 17%;
+    background: none;
+    width: 20px;
+  }
+  .comments-slider .flickity-prev-next-button.previous {
+    left: 20px;
+  }
+  .comments-slider .flickity-prev-next-button.next {
+    left: 70px;
+  }
+  .comments-slider__image_layer-over_second {
+    left: -20px;
+  }
+  .comments-slider__image_layer-over_first {
+    top: -50px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .hero {
+    padding-top: 120px;
+    margin-bottom: 150px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 480px;
+  }
+  .hero-images__desk {
+    width: 540px;
+  }
+  .courses-list__item {
+    margin-right: 114px;
+  }
+  .advantages__image {
+    margin-bottom: 80px;
+    background-position: center center;
+    height: 475px;
+  }
+  .advantages-list__item {
+    font-size: 24px;
+  }
+  .contact-us-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-us .form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 64px;
+    margin-bottom: 50px;
+  }
+  .contact-us .input-wrap + .input-wrap {
+    margin-top: 0;
+  }
+  .contact-us button {
+    margin-top: 40px;
+  }
+  .comments-slider__item {
+    overflow: visible;
+  }
+  .comments-slider__image {
+    max-width: 490px;
+    margin-right: 20px;
+  }
+  .comments-slider__image img {
+    max-height: 445px;
+  }
+  .comments-slider__image_layer-over_first {
+    right: -20px;
+    top: 26px;
+  }
+  .comments-slider__image_layer-over_second {
+    left: -50px;
+  }
+  .comments-slider__image_layer-over_third {
+    right: -20px;
+  }
+  .comments-slider .flickity-button {
+    margin-top: 21%;
+    top: 17px;
+  }
+  .comments {
+    margin: 0;
+  }
+  .comments h2 {
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    font-size: 41px;
+    line-height: 52px;
+    max-width: 360px;
+  }
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+@media all and (min-width: 1280px) {
+  .hero {
+    padding-top: 128px;
+    margin-bottom: 200px;
+  }
+  .hero h1 {
+    font-size: 41px;
+    line-height: 52px;
+    max-width: 565px;
+  }
+  .hero-images__desk {
+    width: 650px;
+  }
+  .courses-list__item a {
+    font-size: 26px;
+  }
+  .provide {
+    margin-bottom: 120px;
+  }
+  .advantages {
+    padding-bottom: 100px;
+  }
+  .advantages h2 {
+    margin-bottom: 58px;
+  }
+  .advantages__image {
+    margin-bottom: 100px;
+  }
+  .advantages-list__item {
+    font-size: 27px;
+  }
+  .apply-scholarship h2 {
+    font-size: 41px;
+    line-height: 52px;
+  }
+  .apply-scholarship p {
+    margin-bottom: 50px;
+  }
+  .apply-scholarship__descr {
+    margin-left: 107px;
+  }
+  .contact-us-wrap {
+    padding: 60px 0 70px;
+  }
+  .contact-us h2 {
+    font-size: 51px;
+    line-height: 64px;
+  }
+  .comments h2 {
+    text-align: left;
+    position: absolute;
+    top: 28%;
+  }
+  .comments-slider__text {
+    padding-top: 22%;
+    margin-top: 50px;
+    padding-bottom: 115px;
+  }
+  .comments-slider__image {
+    position: absolute;
+    min-height: auto;
+  }
+  .comments-slider__image img {
+    border-radius: 5px;
+  }
+  .comments-slider .flickity-button {
+    margin-top: 27%;
+  }
+}

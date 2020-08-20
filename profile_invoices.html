@@ -12,7 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile_subscription.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -20,7 +23,7 @@
         <header class="header logined">
             <div class="container">
                 <div class="header__wrapper">
-                    <a href="index.html" class="header__logo-picture">
+                    <a href="./index.html" class="header__logo-picture">
                         <img src="./images/logo.png" alt="smokin'notes logo" class="header__logo-image">
                     </a>
                     <nav class="header__nav desktop-nav">
@@ -216,14 +219,19 @@
                                             Contact Us
                                         </a>
                                     </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log-in">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log In
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log--out">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log Out
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                            <a href="#" class="header-mobile__log header-mobile__log-in">
-                                Log In
-                            </a>
-                            <a href="#" class="header-mobile__log header-mobile__log--out">
-                                Log Out
-                            </a>
+        
                         </div>
                     </nav>
                 </div>
@@ -270,113 +278,130 @@
                     </p>
                     <div class="profile-subscription__list">
                         <div class="card subscription-card invoices-card">
-                            <div class="subscription-card__plan">
-                                <p>
-                                    Sebscriped Plan
-                                </p>
-                                <p>
-                                    <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                </p>
+                            <div class="card__line-wrap">
+                                <div class="subscription-card__plan">
+                                    <p class="card__small-title">
+                                        Sebscriped Plan
+                                    </p>
+                                    <p>
+                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card__small-title">
+                                        Amount
+                                    </p>
+                                    <p>
+                                        $7.00
+                                    </p>
+                                </div>
                             </div>
-                            <div class="subscription-card__price">
-                                <p>
-                                    Amount
-                                </p>
-                                <p>
-                                    $7.00
-                                </p>
+                            <div class="card__line-wrap">
+                                <div>
+                                    <p class="card__small-title">
+                                        Invoice Date
+                                    </p>
+                                    <p>
+                                        7/26/2020
+                                    </p>
+                                </div>
+                                <a href="#" class="button btn-primary">More Info</a>
                             </div>
-                            <div class="subscription-card__date">
-                                <p>
-                                    Invoice Date
-                                </p>
-                                <p>
-                                    26/7/2020
-                                </p>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
                         </div>
-                        <div class="card subscription-card">
-                            <div class="subscription-card__plan">
-                                <p>
-                                    Sebscriped Plan
-                                </p>
-                                <p>
-                                    <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                </p>
+                        <div class="card subscription-card invoices-card">
+                            <div class="card__line-wrap">
+                                <div class="subscription-card__plan">
+                                    <p class="card__small-title">
+                                        Sebscriped Plan
+                                    </p>
+                                    <p>
+                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card__small-title">
+                                        Amount
+                                    </p>
+                                    <p>
+                                        $7.00
+                                    </p>
+                                </div>
                             </div>
-                            <div class="subscription-card__price">
-                                <p>
-                                    Amount
-                                </p>
-                                <p>
-                                    $7.00
-                                </p>
+                            <div class="card__line-wrap">
+                                <div>
+                                    <p class="card__small-title">
+                                        Invoice Date
+                                    </p>
+                                    <p>
+                                        7/26/2020
+                                    </p>
+                                </div>
+                                <a href="#" class="button btn-primary">More Info</a>
                             </div>
-                            <div class="subscription-card__date">
-                                <p>
-                                    Invoice Date
-                                </p>
-                                <p>
-                                    26/7/2020
-                                </p>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
                         </div>
-                        <div class="card subscription-card">
-                            <div class="subscription-card__plan">
-                                <p>
-                                    Sebscriped Plan
-                                </p>
-                                <p>
-                                    <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                </p>
+                        <div class="card subscription-card invoices-card">
+                            <div class="card__line-wrap">
+                                <div class="subscription-card__plan">
+                                    <p class="card__small-title">
+                                        Sebscriped Plan
+                                    </p>
+                                    <p>
+                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card__small-title">
+                                        Amount
+                                    </p>
+                                    <p>
+                                        $7.00
+                                    </p>
+                                </div>
                             </div>
-                            <div class="subscription-card__price">
-                                <p>
-                                    Amount
-                                </p>
-                                <p>
-                                    $7.00
-                                </p>
+                            <div class="card__line-wrap">
+                                <div>
+                                    <p class="card__small-title">
+                                        Invoice Date
+                                    </p>
+                                    <p>
+                                        7/26/2020
+                                    </p>
+                                </div>
+                                <a href="#" class="button btn-primary">More Info</a>
                             </div>
-                            <div class="subscription-card__date">
-                                <p>
-                                    Invoice Date
-                                </p>
-                                <p>
-                                    26/7/2020
-                                </p>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
                         </div>
-                        <div class="card subscription-card">
-                            <div class="subscription-card__plan">
-                                <p>
-                                    Sebscriped Plan
-                                </p>
-                                <p>
-                                    <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                </p>
+                        <div class="card subscription-card invoices-card">
+                            <div class="card__line-wrap">
+                                <div class="subscription-card__plan">
+                                    <p class="card__small-title">
+                                        Sebscriped Plan
+                                    </p>
+                                    <p>
+                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card__small-title">
+                                        Amount
+                                    </p>
+                                    <p>
+                                        $7.00
+                                    </p>
+                                </div>
                             </div>
-                            <div class="subscription-card__price">
-                                <p>
-                                    Amount
-                                </p>
-                                <p>
-                                    $7.00
-                                </p>
+                            <div class="card__line-wrap">
+                                <div>
+                                    <p class="card__small-title">
+                                        Invoice Date
+                                    </p>
+                                    <p>
+                                        7/26/2020
+                                    </p>
+                                </div>
+                                <a href="#" class="button btn-primary">More Info</a>
                             </div>
-                            <div class="subscription-card__date">
-                                <p>
-                                    Invoice Date
-                                </p>
-                                <p>
-                                    26/7/2020
-                                </p>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -415,12 +440,10 @@
                         </ul>
                         <div class="footer__social">
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/facebook-icon.png" alt="facebook"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/facebook-icon.png" alt="facebook" class="footer__socials-image">
                             </a>
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/instagram-icon.png" alt="instagram"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/instagram-icon.png" alt="instagram" class="footer__socials-image">
                             </a>
                         </div>
                     </div>
@@ -439,11 +462,8 @@
                 <button data-fancybox-close class="button btn-primary">Ok</button>
             </div>
         </div>
-    </div>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap&libraries=&v=weekly"
-        defer></script>
+
+
 </body>
 
 </html>
