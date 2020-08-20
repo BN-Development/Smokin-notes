@@ -250,9 +250,10 @@
                     <p class="subtitle">
                         All registration information must be correct to log in.
                         Your login details and password will be sent
-                        to your UFL.EDU E-MAIL address.
+                        to your
+                        <a href="#">UFL.EDU</a> E-MAIL address.
                     </p>
-                    <form class="big-form" action="">
+                    <form class="big-form">
                         <div class="form-group">
                             <div class="input-wrap">
                                 <input class="input-error" type="text" name="firstName" id="firstName"
@@ -284,7 +285,7 @@
                             <div class="input-wrap select-wrap">
                                 <input type="text" name="major" value="">
                                 <span data-value="1">Major</span>
-                                <ul>
+                                <ul class="scrollbar">
                                     <li data-id="1">
                                         Major-1
                                     </li>
@@ -308,7 +309,7 @@
                             <div class="input-wrap select-wrap">
                                 <input type="text" name="year" value="">
                                 <span data-value="1">Graduation Year</span>
-                                <ul>
+                                <ul class="scrollbar">
                                     <li data-id="1">
                                         2024
                                     </li>
@@ -424,13 +425,13 @@
         <div class="modal verify-modal red-head-modal" id="verify-modal">
             <div class="modal-header">
                 <p class="modal__title">
-                    Verify
+                    Email Sent!
                 </p>
                 <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
             </div>
             <div class="modal-body">
-                <p>Please check your <span>UFL.edu</span> email to activate your account. </p>
-                <button data-fancybox-close class="button btn-primary">Ok</button>
+                <p>Please check your <a href="#">UFL.edu</a> email to activate your account. </p>
+                <button data-fancybox-close class="button btn-primary">Check Email</button>
             </div>
         </div>
     </div>

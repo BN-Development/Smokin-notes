@@ -11,8 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/subscription.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
@@ -445,7 +448,7 @@
                             <div class="input-wrap select-wrap">
                                 <input type="text" name="class" id="class" value="">
                                 <span data-value="1">Select Class</span>
-                                <ul>
+                                <ul class="scrollbar">
                                     <li data-id="1">
                                         Class-1
                                     </li>
@@ -469,7 +472,7 @@
                             <div class="input-wrap select-wrap">
                                 <input type="text" name="exam" id="exam" value="">
                                 <span data-value="1">Select Exam</span>
-                                <ul>
+                                <ul class="scrollbar">
                                     <li data-id="1">
                                         Exam-1
                                     </li>
@@ -544,13 +547,13 @@
         <div class="modal verify-modal red-head-modal" id="verify-modal">
             <div class="modal-header">
                 <p class="modal__title">
-                    Verify
+                    Email Sent!
                 </p>
                 <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
             </div>
             <div class="modal-body">
-                <p>Please check your <span>UFL.edu</span> email to activate your account. </p>
-                <button data-fancybox-close class="button btn-primary">Ok</button>
+                <p>Please check your <a href="#">UFL.edu</a> email to activate your account. </p>
+                <button data-fancybox-close class="button btn-primary">Check Email</button>
             </div>
         </div>
     </div>
@@ -558,7 +561,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap&libraries=&v=weekly"
         defer></script>
-    <script src="./js/subscription.js"></script>
+    <script src="js/subscription.js"></script>
 </body>
 
 </html>
