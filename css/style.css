@@ -767,6 +767,29 @@ input.input-error {
   border-bottom: 1px solid #e74c3c;
 }
 
+input[type="password"] {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+input[type="password"]::-webkit-input-placeholder {
+  color: #b4bac2;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+input[type="password"]::-ms-input-placeholder {
+  color: #b4bac2;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+input[type="password"]::placeholder {
+  color: #b4bac2;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
 .select-wrap {
   position: relative;
 }
