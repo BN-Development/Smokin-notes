@@ -81,4 +81,13 @@ $(document).ready(function() {
     });
   }
   // --------- Pikaday END ---------------------
+  $(".toggle-password").click(function() {
+    $(this).toggleClass("open");
+    let input = $(this).siblings("input");
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
 });

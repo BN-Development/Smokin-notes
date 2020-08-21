@@ -767,27 +767,53 @@ input.input-error {
   border-bottom: 1px solid #e74c3c;
 }
 
+input.input-correct {
+  border-bottom: 1px solid #2ecc71;
+}
+
 input[type="password"] {
   font-size: 22px;
+  line-height: 21px;
   letter-spacing: 2px;
+  padding-right: 20px;
 }
 
 input[type="password"]::-webkit-input-placeholder {
   color: #b4bac2;
   font-size: 14px;
+  line-height: 21px;
   letter-spacing: normal;
 }
 
 input[type="password"]::-ms-input-placeholder {
   color: #b4bac2;
   font-size: 14px;
+  line-height: 21px;
   letter-spacing: normal;
 }
 
 input[type="password"]::placeholder {
   color: #b4bac2;
   font-size: 14px;
+  line-height: 21px;
   letter-spacing: normal;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0;
+  top: 17px;
+  background: url("../images/icons/eye_closed.svg") center center no-repeat;
+  width: 17px;
+  height: 7px;
+  cursor: pointer;
+}
+
+.toggle-password.open {
+  background: url("../images/icons/eye_open.svg") center center no-repeat;
+  width: 16px;
+  height: 11px;
+  top: 14px;
 }
 
 .select-wrap {
@@ -883,6 +909,17 @@ input[type="password"]::placeholder {
 
 .error {
   color: #e74c3c;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
+
+.correct {
+  color: #2ecc71;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 11px;
