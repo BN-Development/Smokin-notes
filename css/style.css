@@ -1133,6 +1133,10 @@ form.big-form .button {
   height: 17px;
 }
 
+.modal .button {
+  margin-top: 20px;
+}
+
 .verify-modal {
   max-width: 360px;
 }
@@ -1141,9 +1145,18 @@ form.big-form .button {
   color: #6c85a7;
 }
 
-.verify-modal button {
+.verify-modal .button {
   width: 100%;
-  margin-top: 20px;
+}
+
+.logout-modal {
+  max-width: 360px;
+}
+
+.logout-modal a.btn-primary {
+  margin-right: 25px;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 .profile-wrap {

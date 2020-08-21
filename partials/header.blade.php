@@ -89,7 +89,7 @@
                         </a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-item-link">
+                        <a href="subscription.html" class="header__nav-item-link">
                             Subscription
                         </a>
                     </li>
