@@ -90,4 +90,6 @@ $(document).ready(function() {
       input.attr("type", "password");
     }
   });
+  $("input.disabled").attr("readonly", true);
+  console.log($("input.disabled").attr("readonly", true));
 });

@@ -713,7 +713,11 @@ main {
 }
 
 .btn-primary:hover {
-  background: rgba(217, 48, 37, 0.8);
+  background: #75140c;
+}
+
+.btn-primary.disable {
+  background: rgba(217, 48, 37, 0.4);
 }
 
 .btn-empty {
@@ -722,8 +726,8 @@ main {
 }
 
 .btn-empty:hover {
-  background: #D93025;
-  color: #fff;
+  border: 1px solid #19293e;
+  color: #19293e;
 }
 
 textarea {
@@ -769,6 +773,11 @@ input.input-error {
 
 input.input-correct {
   border-bottom: 1px solid #2ecc71;
+}
+
+input.disabled {
+  color: #d1d4d9;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 input[type="password"] {
@@ -883,6 +892,21 @@ input[type="password"]::placeholder {
   color: #D93025;
 }
 
+.select-wrap.disabled span {
+  color: #9c9b9d;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.select-wrap.disabled span.active:after {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.select-wrap.disabled span.active + ul {
+  display: none;
+}
+
 .input-wrap {
   position: relative;
 }
@@ -961,6 +985,18 @@ input[type="checkbox"]:checked + label:before {
   height: 17px;
 }
 
+input[type="checkbox"].disabled + label:before {
+  border: 1px solid rgba(147, 156, 165, 0.5);
+}
+
+input[type="checkbox"].disabled:checked + label:before {
+  background: url("../images/icons/checkmark.svg") center center no-repeat;
+  opacity: 0.5;
+  border: none;
+  width: 17px;
+  height: 17px;
+}
+
 input[type="radio"] {
   display: none;
 }
@@ -986,6 +1022,18 @@ input[type="radio"] + label:before {
 input[type="radio"]:checked + label:before {
   background: url("../images/icons/active.svg") center center no-repeat;
   background-size: cover;
+  border: none;
+  width: 14px;
+  height: 14px;
+}
+
+input[type="radio"].disabled + label:before {
+  border: 1px solid rgba(147, 156, 165, 0.5);
+}
+
+input[type="radio"].disabled:checked + label:before {
+  background: url("../images/icons/active.svg") center center no-repeat;
+  opacity: 0.7;
   border: none;
   width: 14px;
   height: 14px;
@@ -1238,7 +1286,7 @@ form.big-form .button {
 .crumbs {
   font-size: 14px;
   line-height: 21px;
-  margin: 20px 0;
+  margin: 14px 0 38px;
 }
 
 .crumbs span {
@@ -1265,6 +1313,22 @@ form.big-form .button {
 
 .crumbs span:last-child:after {
   display: none;
+}
+
+.ui-kit-container {
+  max-width: 360px;
+}
+
+.ui-kit-container .input-wrap {
+  margin-bottom: 30px;
+}
+
+.ui-kit-container .button {
+  margin-bottom: 30px;
+}
+
+.ui-kit-container .modal {
+  display: block !important;
 }
 
 @media all and (min-width: 768px) {
@@ -1374,6 +1438,11 @@ form.big-form .button {
   }
   .gender label[for="male"] {
     margin-right: 0px;
+  }
+  .crumbs {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 20px 0;
   }
 }
 
