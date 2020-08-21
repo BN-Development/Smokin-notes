@@ -772,30 +772,22 @@ input.input-correct {
 }
 
 input[type="password"] {
-  font-size: 22px;
-  line-height: 21px;
   letter-spacing: 2px;
   padding-right: 20px;
 }
 
 input[type="password"]::-webkit-input-placeholder {
   color: #b4bac2;
-  font-size: 14px;
-  line-height: 21px;
   letter-spacing: normal;
 }
 
 input[type="password"]::-ms-input-placeholder {
   color: #b4bac2;
-  font-size: 14px;
-  line-height: 21px;
   letter-spacing: normal;
 }
 
 input[type="password"]::placeholder {
   color: #b4bac2;
-  font-size: 14px;
-  line-height: 21px;
   letter-spacing: normal;
 }
 
@@ -1241,6 +1233,38 @@ form.big-form .button {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #19293e;
+}
+
+.crumbs {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 20px 0;
+}
+
+.crumbs span {
+  color: #19293e;
+}
+
+.crumbs span a {
+  color: #939ca5;
+}
+
+.crumbs span a:hover {
+  color: #19293e;
+  border-bottom: 1px solid #939ca5;
+}
+
+.crumbs span:after {
+  content: "";
+  display: inline-block;
+  margin: 0 8px;
+  background: url("../images/icons/arrow.svg") center center no-repeat;
+  width: 7px;
+  height: 10px;
+}
+
+.crumbs span:last-child:after {
+  display: none;
 }
 
 @media all and (min-width: 768px) {
