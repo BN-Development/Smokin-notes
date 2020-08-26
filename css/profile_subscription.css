@@ -1,0 +1,97 @@
+.subscription-card__plan p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subscription-card__plan_name {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+.subscription-card + .subscription-card {
+  margin-top: 30px;
+}
+
+.subscription-card > div > p:first-child {
+  font-size: 14px;
+  line-height: 21px;
+  color: #8c949f;
+}
+
+.subscription-card > div + div {
+  margin-top: 15px;
+}
+
+.subscription-card .button {
+  margin-top: 25px;
+}
+
+.subscription-card .card__line-wrap .button {
+  margin-top: 0px;
+}
+
+.invoices-card > div + div {
+  margin-top: 25px;
+}
+
+@media all and (min-width: 768px) {
+  .card.subscription-card {
+    border-left: none;
+    border-top: 8px solid #D93025;
+  }
+  .profile-subscription__list {
+    margin-top: 30px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .card.subscription-card {
+    border-top: none;
+    border-left: 8px solid #D93025;
+    max-width: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 25px 30px 25px 0px;
+  }
+  .card.subscription-card > div {
+    margin: 0;
+  }
+  .card.subscription-card .button {
+    margin: 3px 0 0;
+  }
+  .card.subscription-card .card__line-wrap {
+    -webkit-flex: 33%;
+        -ms-flex: 33%;
+            flex: 33%;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .card.subscription-card .card__line-wrap > div:nth-child(even) {
+    text-align: left;
+  }
+  .card.subscription-card .card__small-title {
+    margin-bottom: 10px;
+  }
+  .card.subscription-card .subscription-card__plan .card__small-title {
+    margin-bottom: 5px;
+  }
+  .subscription-card + .subscription-card {
+    margin-top: 15px;
+  }
+  .card.subscription-card {
+    padding-right: 0;
+  }
+}

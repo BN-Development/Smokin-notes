@@ -11,8 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/main_page.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <!-- Jarallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+
+    <!-- Include it if you want to use Video parallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-video.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +30,7 @@
         <header class="header logined">
             <div class="container">
                 <div class="header__wrapper">
-                    <a href="index.html" class="header__logo-picture">
+                    <a href="./index.html" class="header__logo-picture">
                         <img src="./images/logo.png" alt="smokin'notes logo" class="header__logo-image">
                     </a>
                     <nav class="header__nav desktop-nav">
@@ -108,7 +118,7 @@
                                 </a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">
+                                <a href="subscription.html" class="header__nav-item-link">
                                     Subscription
                                 </a>
                             </li>
@@ -216,14 +226,19 @@
                                             Contact Us
                                         </a>
                                     </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log-in">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log In
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log--out">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log Out
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                            <a href="#" class="header-mobile__log header-mobile__log-in">
-                                Log In
-                            </a>
-                            <a href="#" class="header-mobile__log header-mobile__log--out">
-                                Log Out
-                            </a>
+        
                         </div>
                     </nav>
                 </div>
@@ -246,9 +261,9 @@
                 </div>
             </section>
             <section class="provide container">
-                <h2>
+                <!-- <h2>
                     We provide
-                </h2>
+                </h2> -->
                 <div class="provide-list">
                     <div class="provide-list__item">
                         <img src="./images/main-page/illust_course_notes.svg" alt="">
@@ -284,7 +299,7 @@
             </section>
             <section class="courses container">
                 <h2>
-                    To make your studying easier in the following courses:
+                    Courses covered:
                 </h2>
                 <div class="courses-list">
                     <div class="courses-list__item">
@@ -357,8 +372,11 @@
             </section>
             <section class="advantages">
                 <div class="container">
-                    <div class="advantages__image">
-                        <img src="./images/main-page/girls.png" alt="">
+                    <div class="advantages__image jarallax" style="background-image: url('images/parallax-image.jpg')">
+<!--                        <div class="sticky parallax-img"></div>-->
+<!--                        <img src="images/parallax-image.jpg" alt="img" class="parr-ef">-->
+                        <img class="advantages__image_overlay-first" src="./images/overlay_2.svg" alt="">
+                        <img class="advantages__image_overlay-second" src="./images/overlay_1.svg" alt="">
                     </div>
                     <h2>
                         Members get immediate access to online materials
@@ -379,6 +397,81 @@
                         <div class="comments-slider__item">
                             <div class="comments-slider__image">
                                 <img src="./images/main-page/girl.jpg" alt="comment_img">
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_first">
+                                    <h6>
+                                        12M+
+                                    </h6>
+                                    <p>
+                                        Practice exam questions
+                                        taken over 370K+ practice exams
+                                    </p>
+                                </div>
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_second">
+                                    <h6>
+                                        20+
+                                    </h6>
+                                    <p>
+                                        Years helping
+                                        UF Students!
+                                    </p>
+                                </div>
+                                <div
+                                    class="comments-slider__image_layer-over comments-slider__image_layer-over_primary comments-slider__image_layer-over_third">
+                                    <h6>
+                                        110,000+
+                                    </h6>
+                                    <p>
+                                        UF students improved
+                                        thier grades with Smokin'Notes
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comments-slider__text">
+                                <p class="comments-slider__text-name">
+                                    Campbell Jones
+                                </p>
+                                <p class="comments-slider__text-student">
+                                    UFL Student
+                                </p>
+                                <p class="comments-slider__text-comment">
+                                    "I’ve used these notes for 3 of my classes and they make studying so much easier!
+                                    Would
+                                    recommend them to anyone!"
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="comments-slider__item">
+                            <div class="comments-slider__image">
+                                <img src="./images/main-page/girl-3.jpg" alt="comment_img">
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_first">
+                                    <h6>
+                                        12M+
+                                    </h6>
+                                    <p>
+                                        Practice exam questions
+                                        taken over 370K+ practice exams
+                                    </p>
+                                </div>
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_second">
+                                    <h6>
+                                        20+
+                                    </h6>
+                                    <p>
+                                        Years helping
+                                        UF Students!
+                                    </p>
+                                </div>
+                                <div
+                                    class="comments-slider__image_layer-over comments-slider__image_layer-over_primary comments-slider__image_layer-over_third">
+                                    <h6>
+                                        110,000+
+                                    </h6>
+                                    <p>
+                                        UF students improved
+                                        thier grades with Smokin'Notes
+                                    </p>
+                                </div>
                             </div>
                             <div class="comments-slider__text">
                                 <p class="comments-slider__text-name">
@@ -398,24 +491,34 @@
                         <div class="comments-slider__item">
                             <div class="comments-slider__image">
                                 <img src="./images/main-page/girl.jpg" alt="comment_img">
-                            </div>
-                            <div class="comments-slider__text">
-                                <p class="comments-slider__text-name">
-                                    Campbell Jones
-                                </p>
-                                <p class="comments-slider__text-student">
-                                    UFL Student
-                                </p>
-                                <p class="comments-slider__text-comment">
-                                    "I’ve used these notes for 3 of my classes and they make studying so much easier!
-                                    Would
-                                    recommend them to anyone!"
-                                </p>
-                            </div>
-                        </div>
-                        <div class="comments-slider__item">
-                            <div class="comments-slider__image">
-                                <img src="./images/main-page/girl.jpg" alt="comment_img">
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_first">
+                                    <h6>
+                                        12M+
+                                    </h6>
+                                    <p>
+                                        Practice exam questions
+                                        taken over 370K+ practice exams
+                                    </p>
+                                </div>
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_second">
+                                    <h6>
+                                        20+
+                                    </h6>
+                                    <p>
+                                        Years helping
+                                        UF Students!
+                                    </p>
+                                </div>
+                                <div
+                                    class="comments-slider__image_layer-over comments-slider__image_layer-over_primary comments-slider__image_layer-over_third">
+                                    <h6>
+                                        110,000+
+                                    </h6>
+                                    <p>
+                                        UF students improved
+                                        thier grades with Smokin'Notes
+                                    </p>
+                                </div>
                             </div>
                             <div class="comments-slider__text">
                                 <p class="comments-slider__text-name">
@@ -434,7 +537,35 @@
                         </div>
                         <div class="comments-slider__item">
                             <div class="comments-slider__image">
-                                <img src="./images/main-page/girl.jpg" alt="comment_img">
+                                <img src="./images/main-page/girl-3.jpg" alt="comment_img">
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_first">
+                                    <h6>
+                                        12M+
+                                    </h6>
+                                    <p>
+                                        Practice exam questions
+                                        taken over 370K+ practice exams
+                                    </p>
+                                </div>
+                                <div class="comments-slider__image_layer-over comments-slider__image_layer-over_second">
+                                    <h6>
+                                        20+
+                                    </h6>
+                                    <p>
+                                        Years helping
+                                        UF Students!
+                                    </p>
+                                </div>
+                                <div
+                                    class="comments-slider__image_layer-over comments-slider__image_layer-over_primary comments-slider__image_layer-over_third">
+                                    <h6>
+                                        110,000+
+                                    </h6>
+                                    <p>
+                                        UF students improved
+                                        thier grades with Smokin'Notes
+                                    </p>
+                                </div>
                             </div>
                             <div class="comments-slider__text">
                                 <p class="comments-slider__text-name">
@@ -481,7 +612,7 @@
                                 Send Us a Message
                             </p>
                         </div>
-                        <form action="">
+                        <form>
                             <div class="form-group">
                                 <div class="input-wrap">
                                     <input type="text" id="name" name="name" placeholder="Name">
@@ -538,35 +669,28 @@
                         </ul>
                         <div class="footer__social">
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/facebook-icon.png" alt="facebook"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/facebook-icon.png" alt="facebook" class="footer__socials-image">
                             </a>
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/instagram-icon.png" alt="instagram"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/instagram-icon.png" alt="instagram" class="footer__socials-image">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <div class="modal verify-modal red-head-modal" id="verify-modal">
-            <div class="modal-header">
-                <p class="modal__title">
-                    Verify
-                </p>
-                <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
-            </div>
-            <div class="modal-body">
-                <p>Please check your <span>UFL.edu</span> email to activate your account. </p>
-                <button data-fancybox-close class="button btn-primary">Ok</button>
-            </div>
-        </div>
     </div>
+
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap&libraries=&v=weekly"
-        defer></script>
+    <!-- Jarallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
+
+    <!-- Include it if you want to use Video parallax -->
+    <script src="https://unpkg.com/jarallax@1/dist/jarallax-video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="js/main-page.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

@@ -12,12 +12,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile_subscription.css">
-    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/exam_results.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js"></script>
-
 </head>
 
 <body>
@@ -241,123 +238,132 @@
         </header>
 
         <main class="container">
-            <div class="profile-wrap">
-                <div class="profile-menu">
-                    <h2>Hello, <span>Jason W.</span></h2>
-                    <div class="select-wrap">
-                        <span>Account Information</span>
-                        <ul>
-                            <li>
-                                <a href="profile_info.html">
-                                    Account Information
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="profile_subscription.html">
-                                    Subscription
-                                </a>
-                            </li>
-                            <li>
-                                <a href="profile_invoices.html">
-                                    Invoices
-                                </a>
-                            </li>
-                            <li>
-                                <a href="profile_password.html">
-                                    Change Password
-                                </a>
-                            </li>
-                        </ul>
+            <div class="crumbs">
+                <span><a href="">Classes</a></span><span>BSC2011</span>
+            </div>
+            <div class="exam-results">
+                <div class="exam-results__head">
+                    <div>
+                        <h1>
+                            Summer ‘20 BSC2011 Exam 2 Practice Exam
+                        </h1>
+                        <p class="exam-results__date">Completed 20 Jul, 2020 • 50 Questions</p>
                     </div>
-                    <a class="profile__logout" data-fancybox data-src="#logout-modal" href="javascript:;">Log Out</a>
+                    <div class="exam-results__head-btns">
+                        <a href="#" class="button btn-primary">Retry</a>
+                        <a href="#" class="button btn-empty">Strengthen</a>
+                    </div>
                 </div>
-                <div class="profile-body profile-subscription">
-                    <h1 class="title">
-                        Subscription
-                    </h1>
-                    <p class="subtitle">
-                        Subscribed 1 out of 1 Classes
-                    </p>
-                    <div class="profile-subscription__list">
-                        <div class="card subscription-card">
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__plan">
-                                    <p class="card__small-title">
-                                        Subscription Plan
-                                    </p>
-                                    <p>
-                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                    </p>
-                                </div>
-                                <div class="subscription-card__status">
-                                    <p class="card__small-title">
-                                        Status
-                                    </p>
-                                    <p>
-                                        Active
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Start Date
-                                    </p>
-                                    <p>
-                                        26/7/2020
-                                    </p>
-                                </div>
-                                <div class="subscription-card__billing">
-                                    <p class="card__small-title">
-                                        Next Billing
-                                    </p>
-                                    <p>
-                                        9/26/2020
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
+                <div class="exam-results__graph">
+                    <h2>
+                        Results
+                    </h2>
+                    <div class="results-graph">
+                        <h1>//------Сюда графики впихнуть-------//</h1>
+                    </div>
+                </div>
+                <div class="exam-results__questions">
+                    <div class="exam-results__questions-head">
+                        <h2>
+                            Questions
+                        </h2>
+                        <div class="input-wrap select-wrap">
+                            <span data-value="1">Sort by</span>
+                            <ul class="scrollbar">
+                                <li data-id="1">
+                                    Right
+                                </li>
+                                <li data-id="2">
+                                    Wrong
+                                </li>
+                            </ul>
                         </div>
-                        <div class="card subscription-card">
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__plan">
-                                    <p class="card__small-title">
-                                        Subscription Plan
-                                    </p>
+                    </div>
+                    <div class="questions-list">
+                        <div class="questions-list__item questions-item card questions-list__item_right">
+                            <p class="questions-item__count">1/50</p>
+                            <div class="questions-item__body">
+                                <div class="questions-item__question">
                                     <p>
-                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
+                                        The humoral response and cell-mediated response are part of the body’s immunity
                                     </p>
                                 </div>
-                                <div class="subscription-card__status">
-                                    <p class="card__small-title">
-                                        Status
-                                    </p>
-                                    <p>
-                                        Completed
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Start Date
-                                    </p>
-                                    <p>
-                                        7/26/2020
-                                    </p>
-                                </div>
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Last Billing
-                                    </p>
-                                    <p>
-                                        8/26/2020
-                                    </p>
+                                <div class="questions-item__answer">
+                                    <div class="questions-item__answer_item">
+                                        <div class="questions-item__choise">
+                                            <span>Selected:</span>
+                                            <p>540/678 | 79% selected this answer</p>
+                                        </div>
+                                        <span class="questions-item__variant">A</span>
+                                    </div>
+                                    <div class="questions-item__answer_item">
+                                        <div class="questions-item__choise">
+                                            <span>Correct:</span>
+                                            <p>540/678 | 79% selected this answer</p>
+                                        </div>
+                                        <span class="questions-item__variant">A</span>
+                                    </div>
+                                    <a href="#" class="button btn-empty">Review</a>
                                 </div>
                             </div>
-                            <a href="#" class="button btn-primary">More Info</a>
                         </div>
-
+                        <div class="questions-list__item questions-item card questions-list__item_right">
+                            <p class="questions-item__count">2/50</p>
+                            <div class="questions-item__body">
+                                <div class="questions-item__question">
+                                    <div class="questions-item__question_image">
+                                        <img src="./images/video.jpg" alt="">
+                                    </div>
+                                    <p>
+                                        The humoral response and cell-mediated response are part of the body’s immunity
+                                    </p>
+                                </div>
+                                <div class="questions-item__answer">
+                                    <div class="questions-item__answer_item">
+                                        <div class="questions-item__choise">
+                                            <span>Selected:</span>
+                                            <p>540/678 | 79% selected this answer</p>
+                                        </div>
+                                        <span class="questions-item__variant">C</span>
+                                    </div>
+                                    <div class="questions-item__answer_item">
+                                        <div class="questions-item__choise">
+                                            <span>Correct:</span>
+                                            <p>540/678 | 79% selected this answer</p>
+                                        </div>
+                                        <span class="questions-item__variant">C</span>
+                                    </div>
+                                    <a href="#" class="button btn-empty">Review</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions-list__item questions-item card">
+                            <p class="questions-item__count">3/50</p>
+                            <div class="questions-item__body">
+                                <div class="questions-item__question">
+                                    <p>
+                                        The humoral response and cell-mediated response are part of the body’s immunity
+                                    </p>
+                                </div>
+                                <div class="questions-item__answer">
+                                    <div class="questions-item__answer_item">
+                                        <div class="questions-item__choise">
+                                            <span>Selected:</span>
+                                            <p>540/678 | 79% selected this answer</p>
+                                        </div>
+                                        <span class="questions-item__variant">B</span>
+                                    </div>
+                                    <div class="questions-item__answer_item">
+                                        <div class="questions-item__choise">
+                                            <span>Correct:</span>
+                                            <p>540/678 | 79% selected this answer</p>
+                                        </div>
+                                        <span class="questions-item__variant">A</span>
+                                    </div>
+                                    <a href="#" class="button btn-empty">Review</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -406,21 +412,7 @@
                 </div>
             </div>
         </footer>
-        <div class="modal logout-modal red-head-modal" id="logout-modal">
-            <div class="modal-header">
-                <p class="modal__title">
-                    Log Out
-                </p>
-                <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
-            </div>
-            <div class="modal-body">
-                <p>Are you sure you want to log out?</p>
-                <a href="login.html" class="button btn-primary">Yes, Sure</a>
-                <button data-fancybox-close class="button btn-empty">Cancel</button>
-            </div>
-        </div>
-
-
+    </div>
 </body>
 
 </html>

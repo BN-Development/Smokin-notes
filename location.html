@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/location.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
@@ -20,7 +22,7 @@
         <header class="header logined">
             <div class="container">
                 <div class="header__wrapper">
-                    <a href="index.html" class="header__logo-picture">
+                    <a href="./index.html" class="header__logo-picture">
                         <img src="./images/logo.png" alt="smokin'notes logo" class="header__logo-image">
                     </a>
                     <nav class="header__nav desktop-nav">
@@ -108,7 +110,7 @@
                                 </a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">
+                                <a href="subscription.html" class="header__nav-item-link">
                                     Subscription
                                 </a>
                             </li>
@@ -216,14 +218,19 @@
                                             Contact Us
                                         </a>
                                     </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log-in">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log In
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log--out">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log Out
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                            <a href="#" class="header-mobile__log header-mobile__log-in">
-                                Log In
-                            </a>
-                            <a href="#" class="header-mobile__log header-mobile__log--out">
-                                Log Out
-                            </a>
+        
                         </div>
                     </nav>
                 </div>
@@ -247,6 +254,7 @@
                 </div>
                 <div class="location__map location-map">
                     <div class="location-map__image" id="map">
+
                     </div>
                     <div class="location-map__descr">
                         <div class="location-map__item">
@@ -316,35 +324,23 @@
                         </ul>
                         <div class="footer__social">
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/facebook-icon.png" alt="facebook"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/facebook-icon.png" alt="facebook" class="footer__socials-image">
                             </a>
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/instagram-icon.png" alt="instagram"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/instagram-icon.png" alt="instagram" class="footer__socials-image">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <div class="modal verify-modal red-head-modal" id="verify-modal">
-            <div class="modal-header">
-                <p class="modal__title">
-                    Verify
-                </p>
-                <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
-            </div>
-            <div class="modal-body">
-                <p>Please check your <span>UFL.edu</span> email to activate your account. </p>
-                <button data-fancybox-close class="button btn-primary">Ok</button>
-            </div>
-        </div>
+
     </div>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap&libraries=&v=weekly"
-        defer></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap">
+        </script>
+    <script src="js/map.js"></script>
+
 </body>
 
 </html>

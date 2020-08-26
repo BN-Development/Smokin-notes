@@ -10,11 +10,13 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile_subscription.css">
+    <link rel="stylesheet" href="css/profile_info.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js"></script>
 
@@ -240,127 +242,190 @@
             </div>
         </header>
 
-        <main class="container">
-            <div class="profile-wrap">
-                <div class="profile-menu">
-                    <h2>Hello, <span>Jason W.</span></h2>
-                    <div class="select-wrap">
-                        <span>Account Information</span>
-                        <ul>
-                            <li>
-                                <a href="profile_info.html">
-                                    Account Information
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="profile_subscription.html">
-                                    Subscription
-                                </a>
-                            </li>
-                            <li>
-                                <a href="profile_invoices.html">
-                                    Invoices
-                                </a>
-                            </li>
-                            <li>
-                                <a href="profile_password.html">
-                                    Change Password
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="profile__logout" data-fancybox data-src="#logout-modal" href="javascript:;">Log Out</a>
-                </div>
-                <div class="profile-body profile-subscription">
-                    <h1 class="title">
-                        Subscription
-                    </h1>
-                    <p class="subtitle">
-                        Subscribed 1 out of 1 Classes
-                    </p>
-                    <div class="profile-subscription__list">
-                        <div class="card subscription-card">
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__plan">
-                                    <p class="card__small-title">
-                                        Subscription Plan
-                                    </p>
-                                    <p>
-                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                    </p>
-                                </div>
-                                <div class="subscription-card__status">
-                                    <p class="card__small-title">
-                                        Status
-                                    </p>
-                                    <p>
-                                        Active
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Start Date
-                                    </p>
-                                    <p>
-                                        26/7/2020
-                                    </p>
-                                </div>
-                                <div class="subscription-card__billing">
-                                    <p class="card__small-title">
-                                        Next Billing
-                                    </p>
-                                    <p>
-                                        9/26/2020
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
-                        </div>
-                        <div class="card subscription-card">
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__plan">
-                                    <p class="card__small-title">
-                                        Subscription Plan
-                                    </p>
-                                    <p>
-                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                    </p>
-                                </div>
-                                <div class="subscription-card__status">
-                                    <p class="card__small-title">
-                                        Status
-                                    </p>
-                                    <p>
-                                        Completed
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Start Date
-                                    </p>
-                                    <p>
-                                        7/26/2020
-                                    </p>
-                                </div>
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Last Billing
-                                    </p>
-                                    <p>
-                                        8/26/2020
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
-                        </div>
+        <main class="container ui-kit-container">
+            <p> Default</p>
+            <div class="input-wrap">
+                <input type="text" name="text" id="text" placeholder="Text">
+            </div>
+            <p>
+                Disable
+            </p>
+            <div class="input-wrap">
+                <input class="disabled" type="text" name="text" id="text" placeholder="Text">
+            </div>
+            <p>
+                Error
+            </p>
+            <div class="input-wrap">
+                <input class="input-error" type="text" name="text" id="text" placeholder="Text">
+                <p class="error">error</p>
+            </div>
+            <p>
+                Properly
+            </p>
+            <div class="input-wrap">
+                <input class="input-correct" type="text" name="text" id="text" placeholder="Text">
+                <p class="correct">Properly</p>
+            </div>
+            <p>
+                Multi Selected Menu
+            </p>
+            <div class="input-wrap select-wrap">
+                <input type="text" name="major" value="">
+                <span data-value="1">Major</span>
+                <ul class="scrollbar">
+                    <li data-id="1">
+                        Major-1
+                    </li>
+                    <li data-id="2">
+                        Major-2
+                    </li>
+                    <li data-id="3">
+                        Major-3
+                    </li>
+                    <li data-id="4">
+                        Major-4
+                    </li>
+                    <li data-id="4">
+                        Major-5
+                    </li>
+                    <li data-id="4">
+                        Major-6
+                    </li>
+                </ul>
+            </div>
+            <p>
+                Multi Selected Menu
+            </p>
+            <div class="input-wrap select-wrap disabled">
+                <input type="text" name="major" value="">
+                <span data-value="1">Major</span>
+                <ul class="scrollbar">
+                    <li data-id="1">
+                        Major-1
+                    </li>
+                    <li data-id="2">
+                        Major-2
+                    </li>
+                    <li data-id="3">
+                        Major-3
+                    </li>
+                    <li data-id="4">
+                        Major-4
+                    </li>
+                    <li data-id="4">
+                        Major-5
+                    </li>
+                    <li data-id="4">
+                        Major-6
+                    </li>
+                </ul>
+            </div>
+            <p>
+                Checkbox
+            </p>
+            <div class="input-wrap">
+                <input type="checkbox" name="info" id="info">
+                <label for="info">Crucial information</label>
+            </div>
+            <p>
+                Checkbox checked
+            </p>
+            <div class="input-wrap">
+                <input type="checkbox" name="info2" id="info2" checked>
+                <label for="info2">Crucial information</label>
+            </div>
+            <p>
+                Checkbox disabled
+            </p>
+            <div class="input-wrap">
+                <input class="disabled" type="checkbox" name="check" id="check" disabled>
+                <label for="check">Crucial information</label>
+            </div>
+            <p>
+                Checkbox disabled
+            </p>
+            <div class="input-wrap">
+                <input class="disabled" type="checkbox" name="check2" id="check2" checked disabled>
+                <label for="check2">Crucial information</label>
+            </div>
+            <p>
+                Radio
+            </p>
+            <div class="input-wrap">
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">Male</label>
 
-                    </div>
+            </div>
+            <div class="input-wrap">
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </div>
+            <p>
+                Radio disabled
+            </p>
+            <div class="input-wrap">
+                <input class="disabled" type="radio" name="gender2" id="male2" checked disabled>
+                <label for="male2">Male</label>
+
+            </div>
+            <div class="input-wrap">
+                <input class="disabled" type="radio" name="gender2" id="female2" disabled>
+                <label for="female2">Female</label>
+            </div>
+            <p>
+                Password
+            </p>
+            <div class="input-wrap">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <span class="toggle-password"></span>
+
+            </div>
+            <p>
+                Password Error
+            </p>
+            <div class="input-wrap">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <span class="toggle-password"></span>
+                <p class="error">error</p>
+            </div>
+            <p>
+                Password correct
+            </p>
+            <div class="input-wrap">
+                <input type="password" class="input-correct" name="password" id="password" placeholder="Password">
+                <span class="toggle-password"></span>
+                <p class="correct">correct</p>
+            </div>
+            <p>
+                Button Primary
+            </p>
+            <button class="button btn-primary">Button</button>
+            <p>
+                Button Empty
+            </p>
+            <button class="button btn-empty">Button</button>
+            <p>
+                Button to Example Modal
+            </p>
+            <button class="button btn-primary" data-fancybox data-src="#example-modal" href="javascript:;">Open
+                Modal</button>
+            <p>
+                Modal window example
+            </p>
+            <div class="modal example-modal red-head-modal" id="example-modal">
+                <div class="modal-header">
+                    <p class="modal__title">
+                        Email Sent!
+                    </p>
+                    <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
+                </div>
+                <div class="modal-body">
+                    <p>Please check your <a href="#">UFL.edu</a> email to activate your account. </p>
+                    <button data-fancybox-close class="button btn-primary">Check Email</button>
                 </div>
             </div>
+
         </main>
 
         <footer class="footer">

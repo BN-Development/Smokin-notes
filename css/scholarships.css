@@ -1,0 +1,156 @@
+.scholarships {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.scholarships h1,
+.scholarships h2 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.scholarships h2 {
+  margin-top: 55px;
+}
+
+.scholarships__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 15px 0;
+}
+
+.scholarships__text p {
+  margin-top: 15px;
+}
+
+.scholarships__form form {
+  margin-top: 30px;
+}
+
+.scholarships__form form button {
+  margin-top: 25px;
+}
+
+.scholarships .card {
+  margin: 30px 0 55px;
+}
+
+.scholarships .card__title {
+  font-family: Merriweather;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 0 10px;
+}
+
+.scholarships .card__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.scholarships .card__text p {
+  margin: 10px 0 0;
+}
+
+.rewards-places {
+  background: #ffffff;
+  box-shadow: 4px 4px 17px 1px rgba(83, 83, 83, 0.03);
+  border-radius: 5px;
+  padding: 23px 15px;
+}
+
+.rewards-places__item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.rewards-places__item img {
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
+.rewards-places__item + .rewards-places__item {
+  padding-top: 20px;
+  border-top: 1px solid #e3e3e4;
+}
+
+.rewards-places__place {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.rewards-places__descr p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #8c949f;
+}
+
+@media all and (min-width: 768px) {
+  .scholarships {
+    padding: 70px 0;
+  }
+  .scholarships h1,
+  .scholarships h2 {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+  }
+  .scholarships h2 {
+    margin-top: 70px;
+  }
+  .scholarships .card {
+    margin: 20px 0 70px;
+  }
+  .scholarships .card__text {
+    max-width: 529px;
+  }
+  .scholarships__form {
+    max-width: 800px;
+  }
+  .scholarships__form form {
+    margin-top: 35px;
+  }
+  .scholarships__form form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  .scholarships__form form .form-group .input-wrap {
+    margin-top: 0;
+  }
+  .scholarships__form form button {
+    margin-top: 40px;
+  }
+  .rewards {
+    margin-top: 70px;
+    max-width: 385px;
+  }
+  .rewards__item h2 {
+    margin-top: 0;
+  }
+  .rewards__item + .rewards__item {
+    margin-top: 40px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .scholarships {
+    position: relative;
+    padding-right: 405px;
+  }
+  .scholarships__text {
+    max-width: 630px;
+  }
+  .rewards {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

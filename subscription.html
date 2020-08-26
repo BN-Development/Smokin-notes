@@ -11,13 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/subscription.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile_subscription.css">
-    <link rel="stylesheet" href="css/fancybox.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/scripts.js"></script>
-
 </head>
 
 <body>
@@ -239,129 +238,268 @@
                 </div>
             </div>
         </header>
-
         <main class="container">
-            <div class="profile-wrap">
-                <div class="profile-menu">
-                    <h2>Hello, <span>Jason W.</span></h2>
-                    <div class="select-wrap">
-                        <span>Account Information</span>
-                        <ul>
+            <div class="subscribe">
+                <div class="subscribe__head">
+                    <div>
+                        <h1>
+                            Membership Packages
+                        </h1>
+                        <p class="subtitle">
+                            In accordance with current studying-is-safer-at-home guidelines, Smokin'Notes now offers
+                            online
+                            study guides, practice exams, and flash cards!
+                        </p>
+                    </div>
+                    <div class="radio-wrap active">
+                        <span>Number of Courses:</span>
+                        <input type="radio" name="courses" id="courses-1" checked>
+                        <label for="courses-1">1</label>
+                        <input type="radio" name="courses" id="courses-2">
+                        <label for="courses-2">2</label>
+                        <input type="radio" name="courses" id="courses-3">
+                        <label for="courses-3">3</label>
+                        <a href="#" class="button btn-primary">More Info</a>
+                    </div>
+                </div>
+                <div class="subscribe__slider subscribe-slider">
+                    <div class="subscribe-slider__item subscribe-card">
+                        <div class="subscribe-card__name">
+                            <p>
+                                LITE
+                            </p>
+                        </div>
+                        <div class="subscribe-card__price">
+                            <span class="subscribe-card__price_currency">
+                                $
+                            </span>
+                            <span class="subscribe-card__price_value">
+                                29
+                            </span>
+                            <span class="subscribe-card__price_preiod">
+                                /month
+                            </span>
+                            <p class="subscribe-card__price_subtitle">Includes Smokin'Notes shipping</p>
+                        </div>
+                        <ul class="subscribe-card__about">
                             <li>
-                                <a href="profile_info.html">
-                                    Account Information
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="profile_subscription.html">
-                                    Subscription
-                                </a>
+                                <p>
+                                    Online Study Guides
+                                </p>
                             </li>
                             <li>
-                                <a href="profile_invoices.html">
-                                    Invoices
-                                </a>
+                                <p>
+                                    Online Practice Exam
+                                </p>
                             </li>
                             <li>
-                                <a href="profile_password.html">
-                                    Change Password
-                                </a>
+                                <p>
+                                    Online Tutorial Videos
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Flash Cards
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online access ONLY.
+                                    Printing is NOT available
+                                    for any subscribe plan.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Guides are available about
+                                    a week before each exam.
+                                </p>
                             </li>
                         </ul>
+                        <a href="#" class="button btn-primary">Purchase</a>
                     </div>
-                    <a class="profile__logout" data-fancybox data-src="#logout-modal" href="javascript:;">Log Out</a>
+                    <div class="subscribe-slider__item subscribe-card">
+                        <div class="subscribe-card__name">
+                            <p>
+                                PREMIUM
+                            </p>
+                        </div>
+                        <div class="subscribe-card__price">
+                            <span class="subscribe-card__price_currency">
+                                $
+                            </span>
+                            <span class="subscribe-card__price_value">
+                                34
+                            </span>
+                            <span class="subscribe-card__price_preiod">
+                                /month
+                            </span>
+                            <p class="subscribe-card__price_subtitle">Pick up S'N at G'ville location</p>
+                        </div>
+                        <ul class="subscribe-card__about">
+                            <li>
+                                <p>
+                                    Online Study Guides
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Practice Exam
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Tutorial Videos
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Flash Cards
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Printed packet available for
+                                    pickup at Gainesville location
+                                    about a week before each exam.
+                                </p>
+                                <p><b>Note:</b> printing of online materials
+                                    is NOT available for any package.</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="button btn-primary">Purchase</a>
+                    </div>
+                    <div class="subscribe-slider__item subscribe-card subscribe-card_premium">
+                        <div class="subscribe-card__name">
+                            <p>
+                                PREMIUM+
+                            </p>
+                            <span class="subscribe-card__name_status"><img src="./images/icons/star.svg" alt=""> MOST
+                                POPULAR</span>
+                        </div>
+                        <div class="subscribe-card__price">
+                            <span class="subscribe-card__price_currency">
+                                $
+                            </span>
+                            <span class="subscribe-card__price_value">
+                                39
+                            </span>
+                            <span class="subscribe-card__price_preiod">
+                                /month
+                            </span>
+                            <p class="subscribe-card__price_subtitle">Includes Smokin'Notes shipping</p>
+                        </div>
+                        <ul class="subscribe-card__about">
+                            <li>
+                                <p>
+                                    Online Study Guides
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Practice Exam
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Study Guides
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Practice Exam
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Tutorial Videos
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Online Flash Cards
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <b>Printed S'N Guide shipped out
+                                        about 8 days before each exam
+                                        Shipping costs Included.</b>
+                                </p>
+                                <p><b>Note: printing of online materials
+                                        is NOT available for any package.</b></p>
+                            </li>
+                        </ul>
+                        <a href="#" class="button btn-primary">Purchase</a>
+                    </div>
                 </div>
-                <div class="profile-body profile-subscription">
-                    <h1 class="title">
-                        Subscription
-                    </h1>
-                    <p class="subtitle">
-                        Subscribed 1 out of 1 Classes
-                    </p>
-                    <div class="profile-subscription__list">
-                        <div class="card subscription-card">
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__plan">
-                                    <p class="card__small-title">
-                                        Subscription Plan
-                                    </p>
-                                    <p>
-                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                    </p>
-                                </div>
-                                <div class="subscription-card__status">
-                                    <p class="card__small-title">
-                                        Status
-                                    </p>
-                                    <p>
-                                        Active
-                                    </p>
-                                </div>
+                <div class="subscribe__code-access">
+                    <div class="subscribe__form">
+                        <h2>
+                            Redeem Access Code
+                        </h2>
+                        <p>
+                            Redeen access code received along with Smokin'Notes
+                        </p>
+                        <form action="">
+                            <div class="input-wrap">
+                                <input type="text" name="code" id="code" placeholder="Access Code">
                             </div>
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Start Date
-                                    </p>
-                                    <p>
-                                        26/7/2020
-                                    </p>
-                                </div>
-                                <div class="subscription-card__billing">
-                                    <p class="card__small-title">
-                                        Next Billing
-                                    </p>
-                                    <p>
-                                        9/26/2020
-                                    </p>
-                                </div>
+                            <div class="input-wrap select-wrap">
+                                <input type="text" name="class" id="class" value="">
+                                <span data-value="1">Select Class</span>
+                                <ul class="scrollbar">
+                                    <li data-id="1">
+                                        Class-1
+                                    </li>
+                                    <li data-id="2">
+                                        Class-2
+                                    </li>
+                                    <li data-id="3">
+                                        Class-3
+                                    </li>
+                                    <li data-id="4">
+                                        Class-4
+                                    </li>
+                                    <li data-id="4">
+                                        Class-5
+                                    </li>
+                                    <li data-id="4">
+                                        Class-6
+                                    </li>
+                                </ul>
                             </div>
-                            <a href="#" class="button btn-primary">More Info</a>
-                        </div>
-                        <div class="card subscription-card">
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__plan">
-                                    <p class="card__small-title">
-                                        Subscription Plan
-                                    </p>
-                                    <p>
-                                        <span class="subscription-card__plan_name">Premium</span> / 1 class
-                                    </p>
-                                </div>
-                                <div class="subscription-card__status">
-                                    <p class="card__small-title">
-                                        Status
-                                    </p>
-                                    <p>
-                                        Completed
-                                    </p>
-                                </div>
+                            <div class="input-wrap select-wrap">
+                                <input type="text" name="exam" id="exam" value="">
+                                <span data-value="1">Select Exam</span>
+                                <ul class="scrollbar">
+                                    <li data-id="1">
+                                        Exam-1
+                                    </li>
+                                    <li data-id="2">
+                                        Exam-2
+                                    </li>
+                                    <li data-id="3">
+                                        Exam-3
+                                    </li>
+                                    <li data-id="4">
+                                        Exam-4
+                                    </li>
+                                    <li data-id="4">
+                                        Exam-5
+                                    </li>
+                                    <li data-id="4">
+                                        Exam-6
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="card__line-wrap">
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Start Date
-                                    </p>
-                                    <p>
-                                        7/26/2020
-                                    </p>
-                                </div>
-                                <div class="subscription-card__date">
-                                    <p class="card__small-title">
-                                        Last Billing
-                                    </p>
-                                    <p>
-                                        8/26/2020
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="#" class="button btn-primary">More Info</a>
-                        </div>
-
+                            <button class="button btn-primary">Redeem Code</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </main>
+
 
         <footer class="footer">
             <div class="container">
@@ -406,21 +544,13 @@
                 </div>
             </div>
         </footer>
-        <div class="modal logout-modal red-head-modal" id="logout-modal">
-            <div class="modal-header">
-                <p class="modal__title">
-                    Log Out
-                </p>
-                <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
-            </div>
-            <div class="modal-body">
-                <p>Are you sure you want to log out?</p>
-                <a href="login.html" class="button btn-primary">Yes, Sure</a>
-                <button data-fancybox-close class="button btn-empty">Cancel</button>
-            </div>
-        </div>
 
-
+    </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script src="js/subscription.js"></script>
 </body>
 
 </html>

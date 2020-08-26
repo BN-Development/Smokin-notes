@@ -1,0 +1,87 @@
+.logup {
+  max-width: 592px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.logup h1 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.logup .subtitle {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 35px;
+}
+
+.logup .subtitle a {
+  color: #D93025;
+  font-weight: bold;
+}
+
+.logup .subtitle a:hover {
+  text-decoration: underline;
+}
+
+.logup form.big-form > .input-wrap {
+  margin-top: 30px;
+}
+
+.logup form.big-form .checkbox-wrap {
+  margin-top: 30px;
+}
+
+.radio-btns-wrap {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 95px 1fr;
+}
+
+.radio-btns-wrap label {
+  display: block;
+}
+
+.radio-btns-wrap label:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.radio-btns-group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media all and (min-width: 1024px) {
+  .radio-btns-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .radio-btns-wrap span {
+    margin-right: 22px;
+  }
+  .radio-btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+  }
+  .logup {
+    padding: 70px 0;
+  }
+  .logup h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .logup .subtitle {
+    margin-bottom: 45px;
+  }
+  .logup form.big-form > .input-wrap {
+    margin-top: 38px;
+  }
+}

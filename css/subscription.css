@@ -1,0 +1,281 @@
+.subscribe {
+  padding-top: 30px;
+}
+
+.subscribe h1 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.subscribe .subtitle {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 52px;
+  max-width: 390px;
+}
+
+.subscribe .radio-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe .radio-wrap.active {
+  max-width: 380px;
+}
+
+.subscribe .radio-wrap span,
+.subscribe .radio-wrap label {
+  display: none;
+}
+
+.subscribe .radio-wrap.active span,
+.subscribe .radio-wrap.active label {
+  display: block;
+}
+
+.subscribe .radio-wrap.active .button {
+  display: none;
+}
+
+.subscribe__head {
+  margin-bottom: 50px;
+}
+
+.subscribe__slider {
+  margin-bottom: 70px;
+  margin-right: -25px;
+  padding-left: 23px;
+}
+
+.subscribe-card {
+  padding: 20px 20px 125px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 318px;
+  margin-right: 15px;
+  min-height: 100%;
+}
+
+.subscribe-card:last-child {
+  margin-right: 0;
+}
+
+.subscribe-card_premium {
+  border-top: 10px solid #d93025;
+  padding-top: 10px;
+}
+
+.subscribe-card__name {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe-card__name p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #d93025;
+}
+
+.subscribe-card__name_status {
+  color: #ffb100;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.subscribe-card__name_status img {
+  margin-bottom: -1px;
+}
+
+.subscribe-card__price {
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dedede;
+}
+
+.subscribe-card__price_currency {
+  font-size: 14px;
+  line-height: 218.5%;
+  position: relative;
+  top: -32px;
+}
+
+.subscribe-card__price_value {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 82px;
+}
+
+.subscribe-card__price_preiod {
+  font-size: 14px;
+  line-height: 218.5%;
+  margin-left: -12px;
+}
+
+.subscribe-card__price_subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8c949f;
+}
+
+.subscribe-card__about {
+  margin: 20px 0 0;
+  padding-left: 20px;
+  list-style-image: url("../images/icons/checkmark-list.svg");
+}
+
+.subscribe-card__about li {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.subscribe-card__about li:last-child {
+  margin-bottom: 0px;
+}
+
+.subscribe-card__about li p {
+  line-height: 126.5%;
+  margin-bottom: 14px;
+}
+
+.subscribe-card__about li p:last-child {
+  margin-bottom: 0px;
+}
+
+.subscribe-card .button {
+  position: absolute;
+  bottom: 40px;
+}
+
+.subscribe__code-access {
+  margin: 0 -25px;
+  background: url("../images/img_subscription.jpg") center center no-repeat;
+  background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  height: 600px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe__code-access img {
+  height: 100%;
+  width: auto;
+}
+
+.subscribe__form {
+  background-color: #fff;
+  max-width: 450px;
+  padding: 33px;
+  border-radius: 5px;
+}
+
+.subscribe__form h2 {
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 15px;
+}
+
+.subscribe__form p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.subscribe__form form {
+  margin-top: 25px;
+}
+
+.subscribe__form form .button {
+  margin-top: 35px;
+}
+
+@media all and (min-width: 1024px) {
+  .subscribe {
+    padding-top: 70px;
+  }
+  .subscribe__head {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .subscribe h1 {
+    font-size: 41px;
+    line-height: 52px;
+  }
+  .subscribe .radio-wrap {
+    position: absolute;
+    right: 0;
+    top: 16px;
+  }
+  .subscribe .radio-wrap.active {
+    width: 100%;
+  }
+  .subscribe__slider {
+    margin-bottom: 120px;
+  }
+  .subscribe-card {
+    max-width: 396px;
+  }
+  .subscribe-card__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .subscribe-card__price_value {
+    font-size: 66px;
+    line-height: 99px;
+  }
+  .subscribe-card__price_currency {
+    font-size: 17px;
+    line-height: 218.5%;
+  }
+  .subscribe-card__price_period {
+    font-size: 17px;
+    line-height: 218.5%;
+  }
+  .subscribe-card__price {
+    padding-bottom: 33px;
+  }
+  .subscribe-card__about {
+    margin-top: 33px;
+    max-width: 236px;
+  }
+  .subscribe__code-access {
+    margin: 0;
+    height: 526px;
+  }
+  .subscribe__form h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .subscribe__form .input-wrap + .input-wrap {
+    margin-top: 20px;
+  }
+}

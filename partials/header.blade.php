@@ -1,7 +1,7 @@
 <header class="header logined">
     <div class="container">
         <div class="header__wrapper">
-            <a href="index.html" class="header__logo-picture">
+            <a href="./index.html" class="header__logo-picture">
                 <img src="./images/logo.png" alt="smokin'notes logo" class="header__logo-image">
             </a>
             <nav class="header__nav desktop-nav">
@@ -89,7 +89,7 @@
                         </a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-item-link">
+                        <a href="subscription.html" class="header__nav-item-link">
                             Subscription
                         </a>
                     </li>
@@ -197,14 +197,19 @@
                                     Contact Us
                                 </a>
                             </li>
+                            <li class="header-mobile__nav-item header-mobile__log header-mobile__log-in">
+                                <a href="#" class="header-mobile__nav-link">
+                                    Log In
+                                </a>
+                            </li>
+                            <li class="header-mobile__nav-item header-mobile__log header-mobile__log--out">
+                                <a href="#" class="header-mobile__nav-link">
+                                    Log Out
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <a href="#" class="header-mobile__log header-mobile__log-in">
-                        Log In
-                    </a>
-                    <a href="#" class="header-mobile__log header-mobile__log--out">
-                        Log Out
-                    </a>
+
                 </div>
             </nav>
         </div>

@@ -10,9 +10,16 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile_info.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -20,7 +27,7 @@
         <header class="header logined">
             <div class="container">
                 <div class="header__wrapper">
-                    <a href="index.html" class="header__logo-picture">
+                    <a href="./index.html" class="header__logo-picture">
                         <img src="./images/logo.png" alt="smokin'notes logo" class="header__logo-image">
                     </a>
                     <nav class="header__nav desktop-nav">
@@ -108,7 +115,7 @@
                                 </a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#" class="header__nav-item-link">
+                                <a href="subscription.html" class="header__nav-item-link">
                                     Subscription
                                 </a>
                             </li>
@@ -216,14 +223,19 @@
                                             Contact Us
                                         </a>
                                     </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log-in">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log In
+                                        </a>
+                                    </li>
+                                    <li class="header-mobile__nav-item header-mobile__log header-mobile__log--out">
+                                        <a href="#" class="header-mobile__nav-link">
+                                            Log Out
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
-                            <a href="#" class="header-mobile__log header-mobile__log-in">
-                                Log In
-                            </a>
-                            <a href="#" class="header-mobile__log header-mobile__log--out">
-                                Log Out
-                            </a>
+        
                         </div>
                     </nav>
                 </div>
@@ -236,7 +248,7 @@
                     <h2>Hello, <span>Jason W.</span></h2>
                     <div class="select-wrap">
                         <span>Account Information</span>
-                        <ul>
+                        <ul class="scrollbar">
                             <li class="active">
                                 <a href="profile_info.html">
                                     Account Information
@@ -259,7 +271,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="login.html" class="profile__logout">Log Out</a>
+                    <a class="profile__logout" data-fancybox data-src="#logout-modal" href="javascript:;">Log Out</a>
                 </div>
                 <div class="profile-body profile-info">
                     <h1 class="title">
@@ -290,7 +302,7 @@
                             <div class="input-wrap select-wrap">
                                 <input type="text" name="major" value="">
                                 <span data-value="1">Major</span>
-                                <ul>
+                                <ul class="scrollbar">
                                     <li data-id="1">
                                         Major-1
                                     </li>
@@ -313,8 +325,8 @@
                             </div>
                             <div class="input-wrap select-wrap">
                                 <input type="text" name="year" value="">
-                                <span data-value="1">Year</span>
-                                <ul>
+                                <span data-value="1">Expected Date of Graduation</span>
+                                <ul class="scrollbar">
                                     <li data-id="1">
                                         2024
                                     </li>
@@ -402,35 +414,31 @@
                         </ul>
                         <div class="footer__social">
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/facebook-icon.png" alt="facebook"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/facebook-icon.png" alt="facebook" class="footer__socials-image">
                             </a>
                             <a href="#" class="footer__socials-picture">
-                                <img src="./images/icons/instagram-icon.png" alt="instagram"
-                                    class="footer__socials-image">
+                                <img src="./images/icons/instagram-icon.png" alt="instagram" class="footer__socials-image">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <div class="modal verify-modal red-head-modal" id="verify-modal">
+        <div class="modal logout-modal red-head-modal" id="logout-modal">
             <div class="modal-header">
                 <p class="modal__title">
-                    Verify
+                    Log Out
                 </p>
                 <img class="modal__close-btn" data-fancybox-close src="./images/icons/close-modal.svg" alt="close">
             </div>
             <div class="modal-body">
-                <p>Please check your <span>UFL.edu</span> email to activate your account. </p>
-                <button data-fancybox-close class="button btn-primary">Ok</button>
+                <p>Are you sure you want to log out?</p>
+                <a href="login.html" class="button btn-primary">Yes, Sure</a>
+                <button data-fancybox-close class="button btn-empty">Cancel</button>
             </div>
         </div>
-    </div>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0xn24w2NqXEzXNd7XQ_HjCVzZOWX2TKM&callback=initMap&libraries=&v=weekly"
-        defer></script>
+
+
 </body>
 
 </html>

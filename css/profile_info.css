@@ -1,0 +1,10 @@
+.profile-info form.big-form .button {
+  width: auto;
+  margin-right: 16px;
+}
+
+@media all and (min-width: 768px) {
+  .profile-info form {
+    margin-top: 30px;
+  }
+}
