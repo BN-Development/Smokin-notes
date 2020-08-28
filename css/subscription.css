@@ -31,14 +31,27 @@
   max-width: 380px;
 }
 
-.subscribe .radio-wrap span,
-.subscribe .radio-wrap label {
-  display: none;
+.course-class {
+  color: #939CA5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 9px 23px 7px;
+  background-color: transparent;
 }
 
-.subscribe .radio-wrap.active span,
-.subscribe .radio-wrap.active label {
-  display: block;
+.course-class.active {
+  color: white;
+  background-color: #D93025;
+}
+
+.course-class:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.course-class:nth-child(3) {
+  border-radius: 0px 3px 3px 0px;
 }
 
 .subscribe .radio-wrap.active .button {
@@ -50,9 +63,18 @@
 }
 
 .subscribe__slider {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
   margin-right: -25px;
-  padding-left: 23px;
+  margin-left: -25px;
+}
+
+.subscribe__slider .flickity-page-dots {
+  bottom: -46px;
+}
+
+.subscribe__slider .flickity-slider {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .subscribe-card {
@@ -66,8 +88,12 @@
   min-height: 100%;
 }
 
+.subscribe-card:first-child {
+  margin-left: 0px;
+}
+
 .subscribe-card:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .subscribe-card_premium {
@@ -239,8 +265,12 @@
   .subscribe__slider {
     margin-bottom: 120px;
   }
+  .subscribe__slider .flickity-slider {
+    margin: 0;
+  }
   .subscribe-card {
-    max-width: 396px;
+    max-width: 395px;
+    margin-right: 12px;
   }
   .subscribe-card__name {
     font-size: 16px;

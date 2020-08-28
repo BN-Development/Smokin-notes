@@ -10,9 +10,9 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1">
-    <script src="js/scripts.js?v=1"></script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <script src="js/scripts.js?v=2"></script>
 </head>
 
 <body>
