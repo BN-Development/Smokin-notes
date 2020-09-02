@@ -34,6 +34,150 @@
   padding: 32px 24px 22px;
 }
 
+.exam-results .results-graph_wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.exam-results .results-graph_wrap .circle__graph-items {
+  padding-top: 33px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-row {
+  padding-top: 22px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 100%;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-wrap {
+  text-align: center;
+  position: relative;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-wrap p {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #19293E;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-wrap span {
+  display: block;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #939CA5;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-1 {
+  height: 170px;
+  width: 170px;
+  position: relative;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-1 .progressbar-text {
+  top: 60% !important;
+}
+
+.exam-results .results-graph_wrap .circle__graph .circle-2, .exam-results .results-graph_wrap .circle__graph .circle-3 {
+  width: 140px;
+  height: 140px;
+  position: relative;
+}
+
+.exam-results .results-graph_wrap .circle__graph .progressbar-text {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19293E;
+}
+
+.exam-results .results-graph_wrap .inline__graph {
+  padding-top: 40px;
+}
+
+.exam-results .results-graph_wrap .inline__graph-item {
+  margin-top: 25px;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #939CA5;
+}
+
+.exam-results .results-graph_wrap .inline__graph-item:first-child {
+  margin-top: 0;
+}
+
+.exam-results .results-graph_wrap .inline__graph-item .inline-item {
+  max-width: 75%;
+}
+
+.exam-results .results-graph_wrap .inline__graph-item span {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #19293E;
+}
+
+.exam-results .results-graph_wrap .inline__graph-item .progressbar-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #19293E;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .exam-results__questions-head {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -190,9 +334,11 @@
     padding: 0px;
   }
   .results-graph {
+    margin-bottom: 60px;
     box-shadow: 0px 4px 20px rgba(83, 83, 83, 0.1);
     border-radius: 5px;
     padding: 35px;
+    margin-top: 20px;
   }
   .questions-list__item {
     padding: 20px 27px;
@@ -235,5 +381,79 @@
     position: absolute;
     left: 27px;
     top: 21px;
+  }
+  .exam-results .results-graph_wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .exam-results .results-graph_wrap .circle__graph {
+    width: 100%;
+    max-width: 440px;
+  }
+  .exam-results .results-graph_wrap .circle__graph-items {
+    padding-top: 0;
+  }
+  .exam-results .results-graph_wrap .circle__graph .circle-wrap span {
+    padding-top: 15px;
+  }
+  .exam-results .results-graph_wrap .circle__graph .circle-1 {
+    height: 220px;
+    width: 220px;
+  }
+  .exam-results .results-graph_wrap .circle__graph .circle-1 .progressbar-text {
+    top: 55% !important;
+  }
+  .exam-results .results-graph_wrap .circle__graph .circle-2, .exam-results .results-graph_wrap .circle__graph .circle-3 {
+    width: 160px;
+    height: 160px;
+  }
+  .exam-results .results-graph_wrap .inline__graph {
+    padding-top: 0px;
+    width: 100%;
+    max-width: 450px;
+  }
+  .exam-results .results-graph_wrap .inline__graph-item {
+    margin-top: 20px;
+  }
+  .exam-results .results-graph_wrap .inline__graph-item .inline-item {
+    max-width: 82%;
+  }
+  .exam-results .results-graph_wrap .inline__graph-item span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .exam-results .results-graph_wrap .inline__graph-item .progressbar-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1280px) {
+  .exam-results .results-graph_wrap .circle__graph {
+    max-width: 478px;
+  }
+  .exam-results .results-graph_wrap .circle__graph .circle-1 {
+    height: 254px;
+    width: 254px;
+  }
+  .exam-results .results-graph_wrap .circle__graph .circle-2, .exam-results .results-graph_wrap .circle__graph .circle-3 {
+    width: 188px;
+    height: 188px;
+  }
+  .exam-results .results-graph_wrap .inline__graph {
+    max-width: 478px;
+  }
+  .exam-results .results-graph_wrap .inline__graph-item {
+    margin-top: 15px;
+  }
+  .exam-results .results-graph_wrap .inline__graph-item .inline-item {
+    max-width: 82%;
   }
 }

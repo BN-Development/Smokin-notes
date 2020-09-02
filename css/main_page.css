@@ -196,6 +196,11 @@
 
 .comments-slider {
   margin-bottom: 80px;
+  min-height: 725px;
+}
+
+.comments-slider .flickity-viewport {
+  min-height: 725px;
 }
 
 .comments-slider__item {
@@ -374,6 +379,7 @@
     top: 0px;
     right: 25px;
     width: 100%;
+    z-index: -5;
   }
   .hero-images__desk {
     display: block;
@@ -576,7 +582,7 @@
   }
   .hero-images {
     top: 80px;
-    right: 0;
+    right: 25px;
   }
   .hero-images__desk {
     max-height: 670px;
@@ -624,6 +630,12 @@
   }
   .contact-us button {
     margin-top: 40px;
+  }
+  .comments-slider {
+    min-height: auto;
+  }
+  .comments-slider .flickity-viewport {
+    min-height: auto;
   }
   .comments-slider__item {
     overflow: visible;

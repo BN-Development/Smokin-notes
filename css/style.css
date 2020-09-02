@@ -69,11 +69,13 @@ label {
 }
 
 .header__logo-picture {
-  max-width: 191px;
+  width: 191px;
 }
 
 .header__logo-picture img {
-  width: 100%;
+  width: 191px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .header__user-info-wrapper {
@@ -403,7 +405,8 @@ label {
     content: "";
     position: absolute;
     top: 50%;
-    right: -15px;
+    right: 5px;
+    z-index: -1;
     -webkit-transform: translateY(-50%) rotate(0deg);
     -ms-transform: translateY(-50%) rotate(0deg);
     transform: translateY(-50%) rotate(0deg);
@@ -424,6 +427,12 @@ label {
     font-size: 14px;
     line-height: 21px;
   }
+  .header__nav-item:first-of-type {
+    margin-right: 0px !important;
+  }
+  .header__nav-item:first-of-type .header__nav-item-link {
+    padding-right: 20px;
+  }
   .header__nav-item:not(:last-of-type) {
     margin-right: 20px;
   }
@@ -432,6 +441,7 @@ label {
     font-size: 12px;
     line-height: 18px;
     color: #19293e;
+    padding-right: 0;
   }
   .logined .header__user-login-button {
     display: none;
@@ -446,6 +456,12 @@ label {
 }
 
 @media (min-width: 992px) {
+  .header__nav-item--submenu::after {
+    right: 20px;
+  }
+  .header__nav-item:first-of-type .header__nav-item-link {
+    padding-right: 44px;
+  }
   .header__nav-item:not(:last-of-type) {
     margin-right: 44px;
   }
@@ -1373,6 +1389,8 @@ form.big-form .button {
     font-weight: 400;
     font-size: 16px;
     line-height: 218.5%;
+    width: 100%;
+    display: block;
   }
   .profile-menu .select-wrap ul li.active a {
     text-decoration: underline;

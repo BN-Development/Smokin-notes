@@ -10,13 +10,26 @@ $(document).ready(function() {
         friction: 0.3,
         cellSelector: ".comments-slider__item",
         adaptiveHeight: true,
-        autoPlay: 7000
+        autoPlay: 7000,
+        pauseAutoPlayOnHover: false,
+        unpausePlayer: true,
+        pausePlayer: false,
+        stopPlayer: false
     });
+
+    var $carousel = $('.comments-slider').flickity({
+        autoPlay: 7000,
+        pauseAutoPlayOnHover: false,
+        unpausePlayer: true,
+        pausePlayer: false,
+        stopPlayer: false
+    });
+    //
+    // $carousel()
 
 
 
   function flickDesk() {
-
     $(".courses-list").flickity({
       // options
       cellAlign: "center",
@@ -53,15 +66,12 @@ $(document).ready(function() {
     }
 
     if ((windowWidthMob <= 767)) {
-      console.log(1)
-
       $('.jarallax').jarallax({
         speed: 0.4,
         imgPosition: "80% top"
       });
     }
   })
-
 
 
 });

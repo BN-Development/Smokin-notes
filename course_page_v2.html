@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smokin Notes</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" defer></script> *<!--**styles and scripts are linked, but not used&ndash -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous" defer></script> <!--**styles and scripts are linked, but not used&ndash -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous"> *<!--**styles and scripts are linked, but not used&ndash -->
+    <link rel="stylesheet" href="css/reset.css?v=1">
+    <link rel="stylesheet" href="css/common.css?v=2.1">
+
+    <link rel="stylesheet" href="css/course_page_v2.css?v=3.1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="./js/toggleSubmenu.js" defer></script>
+    <script src="./js/burgerMenuToggle.js" defer></script>
+    <script src="./js/openSubscribeMessage.js" defer></script>
+    <script src="./js/toggleMaterialsCategories.js" defer></script>
+    <script src="./js/toggleCourseMobileSections.js" defer></script>
+
+    <script src="./js/showAllCategoriesMaterials.js?v=3.1" defer></script>
+
+</head>
+
+<body>
+<div class="site-holder">
+    <header class="header logined">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="./index.html" class="header__logo-picture">
+                    <img src="./images/icons/new_logo.svg" alt="logo">
+                </a>
+                <nav class="header__nav desktop-nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item header__nav-item--submenu">
+                            <a class="header__nav-item-link">
+                                Classes
+                            </a>
+                            <ul class="header__nav-submenu">
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                                <li class="header__nav-submenu-item">
+                                    <a href="#" class="header__nav-submenu-link">
+                                        APK2100
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="location.html" class="header__nav-item-link">
+                                Locations
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="scholarships.html" class="header__nav-item-link">
+                                Scholarships
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="exam_results.html" class="header__nav-item-link">
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="subscription.html" class="header__nav-item-link">
+                                Subscription
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-info desktop-nav">
+                    <div class="header__user-info-wrapper">
+                        <a href="profile_info.html" class="header__user-name">
+                            Hello, Jason W.
+                        </a>
+                        <p class="header__user-stats">
+                            Logged-In Users:
+                            <span class="header__user-stats-nums">
+                                17
+                            </span>
+                        </p>
+                    </div>
+                    <a href="#" class="header__user-login-button button">
+                        Log In
+                    </a>
+                </div>
+                <div class="header__burger-menu mobile-nav">
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                </div>
+                <nav class="header__mobile-nav mobile-nav">
+                    <div class="header__mobile-nav-wrapper">
+                        <div class="header-mobile__user-info-wrapper">
+                            <p class="header-mobile__user-name">
+                                Jason W.
+                            </p>
+                            <p class="header__user-stats">
+                                Logged-In Users:
+                                <span class="header__user-stats-nums">
+                                    17
+                                </span>
+                            </p>
+                        </div>
+                        <div class="header-mobile__nav-list">
+                            <ul class="header-mobile__nav-list-wrapper">
+                                <li class="header-mobile__nav-item header-mobile__nav-item--submenu">
+                                    <a class="header-mobile__nav-link">
+                                        Classes
+                                    </a>
+                                    <ul class="mobile-nav__submenu">
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                        <li class="mobile-nav__submenu-item">
+                                            <a href="#" class="mobile-nav__submenu-link">
+                                                APK2100
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-mobile__nav-item">
+                                    <a href="#" class="header-mobile__nav-link">
+                                        Locations
+                                    </a>
+                                </li>
+                                <li class="header-mobile__nav-item">
+                                    <a href="#" class="header-mobile__nav-link">
+                                        Scholarships
+                                    </a>
+                                </li>
+                                <li class="header-mobile__nav-item">
+                                    <a href="#" class="header-mobile__nav-link">
+                                        Jobs
+                                    </a>
+                                </li>
+                                <li class="header-mobile__nav-item">
+                                    <a href="#" class="header-mobile__nav-link">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="header-mobile__nav-item header-mobile__log header-mobile__log-in">
+                                    <a href="#" class="header-mobile__nav-link">
+                                        Log In
+                                    </a>
+                                </li>
+                                <li class="header-mobile__nav-item header-mobile__log header-mobile__log--out">
+                                    <a href="#" class="header-mobile__nav-link">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="course">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            Classes
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            APR2020
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="course-heading">
+                <div class="course-heading__announcement heading-announcement">
+                    <h2 class="heading-announcement__title">
+                        BSC 2010 Biology 1
+                    </h2>
+                    <p class="heading-announcement__desc">
+                        A survey of organismal biology with emphasis on botany and zoology.
+                        Science background or Biology major recommended.
+                    </p>
+                    <div class="heading-announcement__actions">
+                        <a href="#" class="heading-announcement__subscribe button">
+                            Subscribed: Premium
+                        </a>
+                        <a href="#" class="heading-announcement__subscribe-info" data-toggle="modal" data-target="#exampleModalCenter">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course__left-side">
+                    <div class="course__files course-files course-expand__section course-expand__section-files">
+                        <h4 class="course-files__title course-section__title expand-course-section">
+                            Files
+                        </h4>
+                        <ul class="course-message__list">
+                            <li class="course-message__item">
+                                <a href="#" class="course-message__item-link">
+                                    <p class="course-message__item-date">
+                                        23 Jul, 2020
+                                    </p>
+                                    <p class="course-message__item-title">
+                                        APK 2100 Exam 2
+                                    </p>
+                                    <p class="course-message__item-desc">
+                                        Check your progress answers for
+                                        APK2100 Exam 2 now available
+                                    </p>
+                                    <a href="#" class="course-message__item-explore mobile-nav">
+                                        Explore
+                                    </a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="course__announcements course-announcements course-expand__section course-expand__section-announcements">
+                        <h4 class="course-announcements__title course-section__title expand-course-section">
+                            Announcements
+                        </h4>
+                        <ul class="course-message__list">
+                            <li class="course-message__item">
+                                <a href="#" class="course-message__item-link">
+                                    <p class="course-message__item-date">
+                                        23 Jul, 2020
+                                    </p>
+                                    <p class="course-message__item-title">
+                                        APK 2100 Exam 2
+                                    </p>
+                                    <p class="course-message__item-desc">
+                                        Check your progress answers for
+                                        APK2100 Exam 2 now available
+                                    </p>
+                                    <a href="#" class="course-message__item-explore mobile-nav">
+                                        Explore
+                                    </a>
+                                </a>
+                            </li>
+                            <li class="course-message__item">
+                                <a href="#" class="course-message__item-link">
+                                    <p class="course-message__item-date">
+                                        23 Jul, 2020
+                                    </p>
+                                    <p class="course-message__item-title">
+                                        APK 2100 Exam 2
+                                    </p>
+                                    <p class="course-message__item-desc">
+                                        Check your progress answers for
+                                        APK2100 Exam 2 now available
+                                    </p>
+                                    <a href="#" class="course-message__item-explore mobile-nav">
+                                        Explore
+                                    </a>
+                                </a>
+                            </li>
+                            <li class="course-message__item">
+                                <a href="#" class="course-message__item-link">
+                                    <p class="course-message__item-date">
+                                        23 Jul, 2020
+                                    </p>
+                                    <p class="course-message__item-title">
+                                        APK 2100 Exam 2
+                                    </p>
+                                    <p class="course-message__item-desc">
+                                        Check your progress answers for
+                                        APK2100 Exam 2 now available
+                                    </p>
+                                    <a href="#" class="course-message__item-explore mobile-nav">
+                                        Explore
+                                    </a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course__right-side materials">
+                    <div class="materials__heading">
+                        <h4 class="course-files__title course-section__title">
+                            Materials
+                        </h4>
+                        <div class="materials-heading__list">
+                            <a class="materials-heading__all-items materials-item materials-item--active">
+                                <span>Show</span> all
+                            </a>
+                            <ul class="materials-heading__category">
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        Supply & demand
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        CLS
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        Botany
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        Botany
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        Botany
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        Botany
+                                    </a>
+                                </li>
+<!--                                TEST LINK-->
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        test-1
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        test-2
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        test-3
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        test-4
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        test-5
+                                    </a>
+                                </li>
+                                <li class="materials-heading__category-item materials-item">
+                                    <a href="#" class="materials-heading__category-link">
+                                        test-6
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="materials-heading__show-more">Show more</a>
+                        </div>
+                    </div>
+                    <div class="materials__body ">
+                        <div class="materials-empty">
+                            <p class="materials-empty__text">
+                                To unlock materials, you need to subscribe
+                            </p>
+                            <a href="#" class="button materials-empty__button">
+                                Subscribe
+                            </a>
+                        </div>
+                        <ul class="materials-card__list">
+                            <li class="materials-card__card material-card material-card--pages">
+                                <a href="#" class="materials-card__title-link">
+                                    Study Guides
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        12 pages
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        8 pages
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card">
+                                <a href="#" class="materials-card__title-link">
+                                    Practive Exams
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        <span class="materials-card__stats-add-text">
+                                          Score:
+                                        </span>
+                                        93%
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                    <span class="materials-card__stats-add-text">
+                      Score:
+                    </span>
+                                        75%
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        <a href="#" class="materials-card__stats-link">
+                                            Take Practice Exam
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card material-card--cards">
+                                <a href="#" class="materials-card__title-link">
+                                    Flash Cards
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="cards1" class="materials-card__item-title-link">
+                                            Cards 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        23 Flash Cards
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="cards2" class="materials-card__item-title-link">
+                                            Cards 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        18 Flash Cards
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="cards1" class="materials-card__item-title-link">
+                                            Cards 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        35 Flash cards
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card material-card--videos">
+                                <a href="#" class="materials-card__title-link">
+                                    Videos
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="video2" class="materials-card__item-title-link">
+                                            Video 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        7 min.
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="video1" class="materials-card__item-title-link">
+                                            Video 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        13 min.
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 2
+                                        </a>
+                                        <a href="video1" class="materials-card__item-title-link">
+                                            Video 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        5 min.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card material-card--pages">
+                                <a href="#" class="materials-card__title-link">
+                                    Study Guides
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        12 pages
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        8 pages
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card">
+                                <a href="#" class="materials-card__title-link">
+                                    Practive Exams
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                    <span class="materials-card__stats-add-text">
+                      Score:
+                    </span>
+                                        93%
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                    <span class="materials-card__stats-add-text">
+                      Score:
+                    </span>
+                                        75%
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        <a href="#" class="materials-card__stats-link">
+                                            Take Practice Exam
+                                        </a>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card material-card--cards">
+                                <a href="#" class="materials-card__title-link">
+                                    Flash Cards
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="cards1" class="materials-card__item-title-link">
+                                            Cards 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        23 Flash Cards
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="cards2" class="materials-card__item-title-link">
+                                            Cards 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        18 Flash Cards
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="cards1" class="materials-card__item-title-link">
+                                            Cards 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        35 Flash cards
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="materials-card__card material-card material-card--videos">
+                                <a href="#" class="materials-card__title-link">
+                                    Videos
+                                </a>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam1" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="video2" class="materials-card__item-title-link">
+                                            Video 2
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        7 min.
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 1
+                                        </a>
+                                        <a href="video1" class="materials-card__item-title-link">
+                                            Video 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        13 min.
+                                    </p>
+                                </div>
+                                <div class="materials-card__item">
+                                    <div class="materials-card__links-wrapper">
+                                        <a href="exam2" class="materials-card__item-title-link">
+                                            Exam 2
+                                        </a>
+                                        <a href="video1" class="materials-card__item-title-link">
+                                            Video 1
+                                        </a>
+                                    </div>
+                                    <p class="materials-card__stats">
+                                        5 min.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">
+                        &copy; 2020 Smokin’Notes Inc. All rights reserved.
+                    </p>
+                </div>
+                <div class="footer__rights">
+                    <ul class="footer__rights-list">
+                        <li class="footer__rights-item">
+                            <a href="#" class="footer__rights-link">
+                                Privacy
+                            </a>
+                        </li>
+                        <li class="footer__rights-item">
+                            <a href="#" class="footer__rights-link">
+                                Terms
+                            </a>
+                        </li>
+                        <li class="footer__rights-item">
+                            <a href="#" class="footer__rights-link">
+                                Help
+                            </a>
+                        </li>
+                        <li class="footer__rights-item">
+                            <a href="#" class="footer__rights-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="#" class="footer__socials-picture">
+                            <img src="./images/icons/facebook-icon.png" alt="facebook" class="footer__socials-image">
+                        </a>
+                        <a href="#" class="footer__socials-picture">
+                            <img src="./images/icons/instagram-icon.png" alt="instagram" class="footer__socials-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+<script src="js/main-page.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

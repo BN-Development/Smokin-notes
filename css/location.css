@@ -71,6 +71,7 @@
 
 .location-map__about p span {
   font-weight: 500;
+  color: #4F6888;
 }
 
 @media all and (min-width: 1024px) {
@@ -106,7 +107,7 @@
   }
   .location-map__about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.1fr;
     grid-column-gap: 20px;
   }
   .location-map__about p + p {

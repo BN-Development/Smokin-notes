@@ -218,8 +218,8 @@
 
 .subscribe__form {
   background-color: #fff;
-  max-width: 450px;
-  padding: 33px;
+  max-width: 364px;
+  padding: 33px 15px;
   border-radius: 5px;
 }
 

@@ -20,6 +20,12 @@ $(document).ready(function() {
 
     $(".header").toggleClass("mobile-header--open");
   });
+
+
+  $('.mobile-nav__submenu-link').click( function () {
+    $('.header__burger-menu').removeClass('header__burger-menu--active');
+    $(".header").removeClass("mobile-header--open");
+  })
   // --------- MENU END ---------------------
   // --------- SELECT ---------------------
   $(".select-wrap span").each(function() {
