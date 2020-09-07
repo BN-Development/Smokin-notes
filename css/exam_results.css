@@ -1,5 +1,5 @@
 main {
-  margin-top: 65px !important;
+  margin-top: 80px !important;
 }
 
 .exam-results {
@@ -96,7 +96,7 @@ main {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-  color: #19293E;
+  color: #19293e;
 }
 
 .exam-results .results-graph_wrap .circle__graph .circle-wrap span {
@@ -106,7 +106,7 @@ main {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #939CA5;
+  color: #939ca5;
 }
 
 .exam-results .results-graph_wrap .circle__graph .circle-1 {
@@ -119,7 +119,8 @@ main {
   top: 60% !important;
 }
 
-.exam-results .results-graph_wrap .circle__graph .circle-2, .exam-results .results-graph_wrap .circle__graph .circle-3 {
+.exam-results .results-graph_wrap .circle__graph .circle-2,
+.exam-results .results-graph_wrap .circle__graph .circle-3 {
   width: 140px;
   height: 140px;
   position: relative;
@@ -131,7 +132,7 @@ main {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: #19293E;
+  color: #19293e;
 }
 
 .exam-results .results-graph_wrap .inline__graph {
@@ -145,7 +146,7 @@ main {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #939CA5;
+  color: #939ca5;
 }
 
 .exam-results .results-graph_wrap .inline__graph-item:first-child {
@@ -167,7 +168,7 @@ main {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #19293E;
+  color: #19293e;
 }
 
 .exam-results .results-graph_wrap .inline__graph-item .progressbar-text {
@@ -175,7 +176,7 @@ main {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #19293E;
+  color: #19293e;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -396,9 +397,6 @@ main {
 }
 
 @media all and (min-width: 1024px) {
-  main {
-    margin-top: 80px !important;
-  }
   .questions-item {
     position: relative;
     padding: 60px 27px;
@@ -441,7 +439,8 @@ main {
   .exam-results .results-graph_wrap .circle__graph .circle-1 .progressbar-text {
     top: 55% !important;
   }
-  .exam-results .results-graph_wrap .circle__graph .circle-2, .exam-results .results-graph_wrap .circle__graph .circle-3 {
+  .exam-results .results-graph_wrap .circle__graph .circle-2,
+  .exam-results .results-graph_wrap .circle__graph .circle-3 {
     width: 160px;
     height: 160px;
   }
@@ -474,7 +473,8 @@ main {
     height: 254px;
     width: 254px;
   }
-  .exam-results .results-graph_wrap .circle__graph .circle-2, .exam-results .results-graph_wrap .circle__graph .circle-3 {
+  .exam-results .results-graph_wrap .circle__graph .circle-2,
+  .exam-results .results-graph_wrap .circle__graph .circle-3 {
     width: 188px;
     height: 188px;
   }

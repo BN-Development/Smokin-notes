@@ -99,7 +99,7 @@
   }
   .login-container {
     padding: 0;
-    height: calc(100vh - 204px);
+    height: calc(100vh - 196px);
   }
   .login h1 {
     font-size: 30px;

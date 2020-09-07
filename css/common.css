@@ -1,14 +1,14 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* BUTTON */
 .button {
   padding: 13px 20px;
-  background: #D93025;
+  background: #d93025;
   border-radius: 5px;
-  border: 1px solid #D93025;
-  font-family: 'Poppins', sans-serif;
+  border: 1px solid #d93025;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -70,15 +70,15 @@
 }
 
 .header__user-stats {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #8F9BAB;
+  color: #8f9bab;
 }
 
 .header__user-stats-nums {
   font-weight: 600;
-  color: #19293E;
+  color: #19293e;
 }
 
 @media all and (min-width: 320px), (max-width: 319px) {
@@ -116,7 +116,7 @@
   .header__burger-line {
     width: 40px;
     height: 3px;
-    background-color: #19293E;
+    background-color: #19293e;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -155,7 +155,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #19293E;
+    color: #19293e;
   }
   .logined .header-mobile__log-in {
     display: none;
@@ -217,18 +217,18 @@
   }
   .header-mobile__log,
   .header-mobile__nav-link {
-    font-family: 'Merriweather', sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: #19293E;
+    color: #19293e;
   }
   .header-mobile__nav-item--submenu {
     position: relative;
   }
   .header-mobile__nav-item--submenu::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 11px;
     right: 0px;
@@ -242,9 +242,9 @@
     -webkit-transform-origin: center center;
     -ms-transform-origin: center center;
     transform-origin: center center;
-    transition: top 0.3s, -webkit-transform 0.3s;
-    transition: top 0.3s, transform 0.3s;
-    transition: top 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    transition: top 0.3s, -webkit-transform 0.3s;
+    transition: top 0.3s, transform 0.3s;
+    transition: top 0.3s, transform 0.3s, -webkit-transform 0.3s;
   }
   .header-mobile__nav-item--submenu-active::after {
     -webkit-transform: translateY(-50%) rotate(-180deg);
@@ -268,9 +268,9 @@
     -webkit-transform-origin: center top;
     -ms-transform-origin: center top;
     transform-origin: center top;
-    transition: height 0.3s, -webkit-transform 0.3s;
-    transition: transform 0.3s, height 0.3s;
-    transition: transform 0.3s, height 0.3s, -webkit-transform 0.3s;
+    transition: height 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, height 0.3s;
+    transition: transform 0.3s, height 0.3s, -webkit-transform 0.3s;
   }
   .mobile-nav__submenu > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -291,12 +291,12 @@
     height: 100%;
   }
   .mobile-nav__submenu-link {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #19293E;
+    color: #19293e;
   }
   .header__user-stats {
     font-size: 14px;
@@ -335,7 +335,7 @@
     background-color: #fff;
     box-shadow: 2px 6px 27px rgba(173, 185, 198, 0.25);
     opacity: 0;
-    transition: opacity 0.3s, top 0.5s;
+    transition: opacity 0.3s, top 0.5s;
   }
   .header__nav-submenu > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -370,7 +370,7 @@
     text-align: center;
   }
   .header__nav-item--submenu::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     right: -15px;
@@ -401,10 +401,7 @@
   .header__nav-item-link {
     font-size: 12px;
     line-height: 18px;
-    color: #19293E;
-  }
-  .logined .header__user-login-button {
-    display: none;
+    color: #19293e;
   }
   .not-logined .header__user-info-wrapper {
     display: none;
@@ -462,7 +459,7 @@
 }
 
 .breadcrumbs__item:not(:last-of-type)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -23px;
@@ -476,17 +473,17 @@
 }
 
 .breadcrumbs__link {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #939CA5;
+  color: #939ca5;
   transition: color 0.3s;
 }
 
 .breadcrumbs__item:last-of-type .breadcrumbs__link {
-  color: #19293E;
+  color: #19293e;
 }
 
 @media all and (min-width: 320px), (max-width: 319px) {
@@ -516,7 +513,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 5px;
-  border-top: 8px solid #75140C;
+  border-top: 8px solid #75140c;
   box-shadow: 4px 4px 17px 1px rgba(83, 83, 83, 0.15);
   background-color: #fff;
   /* display: none; */
@@ -544,12 +541,12 @@
 
 .subscribe-message__desc,
 .subscribe-message__advantages-desc {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #939CA5;
+  color: #939ca5;
 }
 
 .subscribe-message__desc {
@@ -562,12 +559,12 @@
 }
 
 .subscribe-message__advantages-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: #19293E;
+  color: #19293e;
 }
 
 .subscribe-message__advantages-list {
@@ -585,14 +582,14 @@
 }
 
 .subscribe-message__advantages-item::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -15px;
   top: 10px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #75140C;
+  background-color: #75140c;
 }
 
 @media all and (min-width: 320px), (max-width: 319px) {
@@ -665,7 +662,7 @@
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;
-  color: #4F6888;
+  color: #4f6888;
 }
 
 .footer__rights {
@@ -692,7 +689,7 @@
 }
 
 .footer__rights-item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -6px;
@@ -701,7 +698,7 @@
   transform: translateY(-50%);
   height: 14px;
   width: 1px;
-  background-color: #4F6888;
+  background-color: #4f6888;
 }
 
 .footer__social {
@@ -716,7 +713,7 @@
 .footer__rights-link {
   font-style: normal;
   font-weight: normal;
-  color: #4F6888;
+  color: #4f6888;
 }
 
 .footer__socials-picture {
@@ -841,7 +838,7 @@
   user-select: none;
 }
 
-.card-reference__item-input input[type=radio] {
+.card-reference__item-input input[type="radio"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -856,7 +853,7 @@
   height: 15px;
   width: 15px;
   background-color: transparent;
-  border: 1px solid #939CA5;
+  border: 1px solid #939ca5;
   border-radius: 50%;
   transition: border 0.3s;
 }
@@ -867,12 +864,14 @@
   display: none;
 }
 
-.card-reference__item-input input[type=radio]:checked ~ .checkmark-radio::after {
+.card-reference__item-input
+input[type="radio"]:checked
+~ .checkmark-radio::after {
   display: block;
 }
 
-.card-reference__item-input input[type=radio]:checked ~ .checkmark-radio {
-  border: 1px solid #75140C;
+.card-reference__item-input input[type="radio"]:checked ~ .checkmark-radio {
+  border: 1px solid #75140c;
 }
 
 .card-reference__item-input .checkmark-radio::after {
@@ -881,7 +880,7 @@
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #75140C;
+  background: #75140c;
 }
 
 /* CHECKBOX BUTTONS */
@@ -896,7 +895,7 @@
   user-select: none;
 }
 
-.card-reference__item-input input[type=checkbox] {
+.card-reference__item-input input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -910,12 +909,14 @@
   left: 0;
   height: 15px;
   width: 15px;
-  border: 1px solid #939CA5;
+  border: 1px solid #939ca5;
   border-radius: 1px;
 }
 
-.card-reference__item-input input[type=checkbox]:checked ~ .checkmark-checkbox {
-  background-color: #75140C;
+.card-reference__item-input
+input[type="checkbox"]:checked
+~ .checkmark-checkbox {
+  background-color: #75140c;
 }
 
 .checkmark-checkbox::after {
@@ -924,12 +925,16 @@
   display: none;
 }
 
-.card-reference__item-input input[type=checkbox]:checked ~ .checkmark-checkbox::after {
+.card-reference__item-input
+input[type="checkbox"]:checked
+~ .checkmark-checkbox::after {
   display: block;
 }
 
-.card-reference__item-input input[type=checkbox]:checked ~ .checkmark-checkbox {
-  border: 1px solid #75140C;
+.card-reference__item-input
+input[type="checkbox"]:checked
+~ .checkmark-checkbox {
+  border: 1px solid #75140c;
 }
 
 .card-reference__item-input .checkmark-checkbox::after {

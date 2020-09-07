@@ -4,7 +4,7 @@ section.course .container {
 }
 
 section.course .container .breadcrumbs {
-  margin-top: 40px;
+  margin-top: 55px;
 }
 
 .course-heading {
@@ -17,7 +17,7 @@ section.course .container .breadcrumbs {
 }
 
 .course-heading::before {
-  content: '';
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +56,7 @@ section.course .container .breadcrumbs {
 
 .heading-announcement__subscribe-info {
   margin-left: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
@@ -102,11 +102,11 @@ section.course .container .breadcrumbs {
   }
   .heading-announcement__desc {
     font-weight: 300;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     width: 65%;
   }
   .heading-announcement__title {
-    font-family: 'Merriweather', sans-serif;
+    font-family: "Merriweather", sans-serif;
   }
 }
 
@@ -116,7 +116,7 @@ section.course .container .breadcrumbs {
   }
   .heading-announcement__title,
   .heading-announcement__desc {
-    color: #19293E;
+    color: #19293e;
   }
   .heading-announcement__title {
     font-size: 32px;
@@ -133,11 +133,11 @@ section.course .container .breadcrumbs {
   .heading-announcement__subscribe-info:focus {
     font-size: 16px;
     line-height: 24px;
-    color: #19293E;
+    color: #19293e;
   }
   .course-heading__announcement {
     padding: 32px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
     -webkit-transform: translateX(-15px);
     -ms-transform: translateX(-15px);
@@ -160,7 +160,7 @@ section.course .container .breadcrumbs {
   }
   .heading-announcement__title,
   .heading-announcement__desc {
-    font-family: 'Merriweather', sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-style: normal;
     transition: color 0.3s;
   }
@@ -199,10 +199,10 @@ section.course .container .breadcrumbs {
 }
 
 .course-section__title {
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #19293E;
+  color: #19293e;
 }
 
 .course-message__item {
@@ -223,45 +223,45 @@ section.course .container .breadcrumbs {
 }
 
 .course-message__item-date {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #939CA5;
+  color: #939ca5;
 }
 
 .course-message__item-title {
   margin-bottom: 5px;
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #19293E;
+  color: #19293e;
   font-size: 16px;
   line-height: 20px;
 }
 
 .course-message__item-desc {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #19293E;
+  color: #19293e;
 }
 
 .course-message__item-explore {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #75140C;
+  color: #75140c;
 }
 
 .materials-heading__all-items,
 .materials-heading__category-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -301,51 +301,51 @@ section.course .container .breadcrumbs {
 }
 
 .materials-card__title-link {
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: #19293E;
+  color: #19293e;
   font-size: 16px;
   transition: color 0.3s;
 }
 
 .materials-card__item-title-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #E74C3C !important;
+  color: #e74c3c !important;
   text-decoration: none;
   font-size: 16px;
   line-height: 24px;
-  transition: color 0.3s, -webkit-text-decoration 0.3s;
-  transition: color 0.3s, text-decoration 0.3s;
-  transition: color 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
+  transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s;
+  transition: color 0.3s, text-decoration 0.3s, -webkit-text-decoration 0.3s;
 }
 
 .materials-card__item-title-link:hover,
 .materials-card__item-title-link:focus {
-  color: #E74C3C !important;
+  color: #e74c3c !important;
   text-decoration: underline;
 }
 
 .materials-card__title-link:hover,
 .materials-card__title-link:focus {
   text-decoration: none;
-  color: #E74C3C !important;
+  color: #e74c3c !important;
 }
 
 .materials-card__stats {
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #939CA5;
+  color: #939ca5;
   font-size: 14px;
   line-height: 21px;
 }
 
 .materials-card__stats::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: -17px;
@@ -372,27 +372,27 @@ section.course .container .breadcrumbs {
 }
 
 .materials-card__stats-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
-  color: #19293E;
+  color: #19293e;
   transition: color 0.3s;
 }
 
 .materials-card__stats-link:hover,
 .materials-card__stats-link:focus {
-  color: #E74C3C;
+  color: #e74c3c;
 }
 
 .materials-card__stats-add-text {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-  color: #19293E;
+  color: #19293e;
 }
 
 .materials-card__links-wrapper {
@@ -410,7 +410,7 @@ section.course .container .breadcrumbs {
 }
 
 .materials-card__item-title-link:nth-child(2)::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -10px;
   top: 50%;
@@ -420,7 +420,7 @@ section.course .container .breadcrumbs {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #D93025 !important;
+  background-color: #d93025 !important;
 }
 
 .materials-heading__all-items {
@@ -467,7 +467,7 @@ section.course .container .breadcrumbs {
     border-bottom: 1px solid transparent;
   }
   .expand-course-section::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 0;
     top: 50%;
@@ -493,7 +493,7 @@ section.course .container .breadcrumbs {
   .course-message__list {
     height: 0;
     opacity: 0;
-    transition: opacity 0.3s, height 0.3s;
+    transition: opacity 0.3s, height 0.3s;
   }
   .course-expand__section--active .course-message__list {
     height: 100%;
@@ -543,7 +543,7 @@ section.course .container .breadcrumbs {
     display: none;
   }
   .materials--empty .course-files__title {
-    color: #939CA5;
+    color: #939ca5;
   }
   .materials--empty .materials-heading__list {
     display: none;
@@ -567,17 +567,17 @@ section.course .container .breadcrumbs {
     padding: 32px;
     margin-top: 18px;
     border-radius: 5px;
-    border: 1px solid #E3E3E4;
+    border: 1px solid #e3e3e4;
     box-shadow: 4px 4px 17px 1px rgba(83, 83, 83, 0.07);
   }
   .materials-empty__text {
     max-width: 229px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #19293E;
+    color: #19293e;
     text-align: center;
   }
   .materials-empty__text {
@@ -588,7 +588,7 @@ section.course .container .breadcrumbs {
   }
   .material-card {
     padding: 29px 23px;
-    border-top: 8px solid #D93025;
+    border-top: 8px solid #d93025;
     border-left: none;
   }
   .materials-card__title-link {
@@ -601,18 +601,18 @@ section.course .container .breadcrumbs {
   .materials-heading__all-items {
     position: relative;
     margin-right: 20px;
-    color: #939CA5 !important;
+    color: #939ca5 !important;
   }
   .materials-heading__all-items span {
-    color: #939CA5 !important;
+    color: #939ca5 !important;
   }
   .materials-heading__all-items:active,
   .materials-heading__all-items:focus,
   .materials-heading__all-items:hover {
-    color: #939CA5;
+    color: #939ca5;
   }
   .materials-heading__all-items::before {
-    content: '';
+    content: "";
     position: absolute;
     right: -20px;
     top: 50%;
@@ -644,7 +644,7 @@ section.course .container .breadcrumbs {
     box-shadow: 3px 7px 27px rgba(168, 178, 189, 0.15);
     z-index: 50;
     opacity: 0;
-    transition: opacity 0.3s, height 0.3s;
+    transition: opacity 0.3s, height 0.3s;
   }
   .materials-heading__category--open {
     opacity: 1;
@@ -724,7 +724,7 @@ section.course .container .breadcrumbs {
   .material-card {
     padding: 25px 32px;
     border-top: none;
-    border-left: 8px solid #D93025;
+    border-left: 8px solid #d93025;
   }
   .materials-card__title-link {
     line-height: 20px;
@@ -755,7 +755,7 @@ section.course .container .breadcrumbs {
   .materials-heading__list {
     margin-top: 20px;
     overflow: hidden;
-    height: 39px;
+    height: 43px;
   }
   .materials-heading__list.active {
     max-width: 100%;
@@ -820,7 +820,7 @@ section.course .container .breadcrumbs {
     line-height: 21px;
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
-    color: #19293E;
+    color: #19293e;
     cursor: pointer;
     min-width: 80px;
   }
@@ -841,7 +841,7 @@ section.course .container .breadcrumbs {
   }
   .materials-heading__all-items,
   .materials-heading__category-link {
-    color: #939CA5;
+    color: #939ca5;
     transition: color 0.3s;
   }
   .materials-item--active,
@@ -860,7 +860,7 @@ section.course .container .breadcrumbs {
     padding: 8px 8px 7px;
   }
   .materials-item--active {
-    background-color: #D93025;
+    background-color: #d93025;
     color: white;
   }
 }
