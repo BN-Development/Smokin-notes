@@ -11,11 +11,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=block"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/exam_quiz.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/exam_quiz.css?v=1.4">
+    <link rel="stylesheet" href="css/fancybox.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="js/exam-quiz.js?v=1.5"></script>
     <script src="js/scripts.js"></script>
-    <script src="js/exam-quiz.js"></script>
 </head>
 
 <body>
@@ -238,7 +259,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container-quiz">
         <div class="crumb-wrap">
             <a href="#/" class="back-exam">back to the exam</a>
             <a href="#/" class="exam-theme">Summer  ‘20 BSC2011 Exam 2 Practice Exam</a>
@@ -250,7 +271,7 @@
                         <img src="images/img_practice.png" alt="image quiz" class="question-img">
                         <p>
                             The humoral response and cell-mediated response are part
-                            of the_______body simmunity. The humoral response and
+                            of the <span>_______</span> body simmunity. The humoral response and
                             cell-mediated response are part of the body simmunity
                         </p>
                     </div>
@@ -258,61 +279,56 @@
                         <div class="pagination__quiz-items">
                             <div class="countdown"></div>
 
-                            <div class="progress-items">
-                                <ul class="pagination__items">
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">22</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">23</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">24</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">25</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">26</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">27</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">28</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">29</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">30</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">31</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">32</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">33</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">34</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">35</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">36</a>
-                                    </li>
-                                    <li class="pagination__items-list">
-                                        <a href="#/" class="pagination__items-list-link">37</a>
-                                    </li>
-                                </ul>
-                                <div class="progress-wrap progress" data-progress-percent="26">
-                                    <div class="progress-bar progress"></div>
-                                </div>
-                            </div>
+                            <ul class="pagination__items">
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">22</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">23</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">24</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">25</a>
+                                        </li>
+                                        <li class="pagination__items-list active-quest">
+                                            <a href="#/" class="pagination__items-list-link">26</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">27</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">28</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">29</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">30</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">31</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">32</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">33</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">34</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">35</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">36</a>
+                                        </li>
+                                        <li class="pagination__items-list">
+                                            <a href="#/" class="pagination__items-list-link">37</a>
+                                        </li>
+                                    </ul>
 
                             <div class="counter">
                                 <span class="from-question">26</span>
@@ -323,13 +339,15 @@
                                 <img src="images/icons/arrow-down-grey.svg" alt="arrow to down">
                             </button>
                         </div>
-
+                        <div class="progress-wrap progress" data-progress-percent="26">
+                            <div class="progress-bar progress"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="answer-wrap">
                     <div class="answer__items">
                         <div class="information-block">
-                            <div class="warning-name">Incorrect, Right Answer is B</div>
+                            <div class="warning-name">Incorrect, Right Answer is <span>B</span></div>
                             <p>
                                 In the relationship between a landlordand a tenant,
                                 the landlord is the lessorand the tenant is the lessee.
@@ -340,11 +358,11 @@
                             <li class="answer__list-item"><span>a</span>
                                 <a href="#/" class="answer__list-item-link">Sensory Neurons <span>0%</span></a>
                             </li>
-                            <li class="answer__list-item"><span>b</span>
-                                <a href="#/" class="answer__list-item-link">Effector Cells <span>65%</span></a>
+                            <li class="answer__list-item correct-answer" ><span>b</span>
+                                <a href="#/" class="answer__list-item-link">Effector Cells <span class="">65%</span></a>
                             </li>
-                            <li class="answer__list-item"><span>c</span>
-                                <a href="#/" class="answer__list-item-link">Ganglia <span>25%</span></a>
+                            <li class="answer__list-item incorrect-answer"><span>c</span>
+                                <a href="#/" class="answer__list-item-link">Ganglia <span class="">25%</span></a>
                             </li>
                             <li class="answer__list-item"><span>d</span>
                                 <a href="#/" class="answer__list-item-link">All are coorect <span>0%</span></a>
@@ -360,11 +378,34 @@
         <div class="container quiz-wrap">
             <div class="feedback-block">
                 <a data-fancybox data-src="#hint-modal" href="javascript:;" class="hits-btn">Hint</a>
-                <a href="#/" class="feedback-btn">Feedback</a>
+                <a data-fancybox data-src="#feedback-modal" href="javascript:;" class="feedback-btn">Feedback</a>
             </div>
-            <a href="#/" class="next-quiz">Next</a>
+            <a href="#/" class="next-quiz button btn-primary">Next</a>
         </div>
     </div>
+</div>
+
+<div class="hint-modal" id="hint-modal">
+    <h2>
+        Hint
+    </h2>
+    <p>
+        The imposition of $4 tariff essentially
+        increases the world price by $4 to $24 per pair.
+    </p>
+</div>
+
+<div class="feedback-modal" id="feedback-modal">
+    <h2>
+        Question Feedback
+    </h2>
+    <p>
+        Please share your feedback directly with our technical & support team.
+    </p>
+    <form class="feedback-form">
+        <textarea placeholder="Your feedback..." class="textarea-submit"></textarea>
+        <button class="feedback-submit button btn-primary">Submit</button>
+    </form>
 </div>
 </body>
 

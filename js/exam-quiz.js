@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     // SIGNATURE PROGRESS
     function moveProgressBar() {
-        var getPercent = ($('.progress-wrap').data('progress-percent') / 60);
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 50);
         var getProgressWrapWidth = $('.progress-wrap').width();
         var progressTotal = getPercent * getProgressWrapWidth;
         var animationLength = 2500;
@@ -40,4 +40,19 @@ $(document).ready(function() {
             left: progressTotal
         }, animationLength);
     }
-})
+
+    $('.show-arrow').click( function () {
+        $('.pagination__items').toggleClass('active');
+        $('.pagination__quiz').toggleClass('active');
+    });
+
+    $('.show-arrow').click( function () {
+        $(this).toggleClass('active');
+    });
+
+    // $('.pagination__items-list').click( function () {
+    //     $('.pagination__items-list').removeClass('active-quest');
+    //     $(this).addClass('active-quest');
+    // });
+
+});
